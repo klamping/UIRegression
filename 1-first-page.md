@@ -6,7 +6,7 @@ Below are a few simple examples of embedding content with markdown, starting wit
 
 ## Heading 2
 
-This is a standard paragraph, containing a **bolded word** followed by an _italicized word_, a [link](http://bitbooks.cc), and a  `monospaced word` (which is typically used for referencing a piece of code).
+This is a standard paragraph, containing a **bolded word** followed by an _italicized word_, a [link](http://example.com), and a  `monospaced word` (which is typically used for referencing a piece of code).
 
 * Item 1
 * Item 2
