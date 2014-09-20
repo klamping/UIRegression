@@ -1,0 +1,290 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Common Style Sheet
+
+   Note: All visual styles can
+   be overwritten, deleted, or
+   moved to theme as needed.
+
+   Table of Contents:
+   -----------------------------
+   + Basics
+   + Non-semantic Helpers
+
+-------------------------------- */
+
+
+/* Basics
+-------------------------------- */
+
+body {
+    font-size: 1em;
+    line-height: $line-height-base;
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-normal;
+    background-color: $body-background;
+    color: $text-color;
+    text-align: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: ($site-max-width + 20px);
+    position: relative;
+}
+
+a {
+    text-decoration: underline;
+    color: $link-color; /* default link color */
+
+    &:hover, &:focus {
+        color: $link-color-hover; /* default link hover/focus color */
+    }
+
+    &:focus {
+        outline: thin dotted; /* outline focused elements for accessibility */
+    }
+
+    &:hover, &:active {
+        outline: none;
+    }
+}
+
+input[type=checkbox] {
+    border: 0px !important;
+}
+
+::-moz-selection {
+    background: $selection-color;
+    color: inherit;
+    text-shadow: none;
+}
+
+::selection {
+    background: $selection-color;
+    color: inherit;
+    text-shadow: none;
+}
+
+/* HTML5 placeholder attribute (don't combine into a group selector) */
+
+::-webkit-input-placeholder {
+    color: $input-color-placeholder; /* WebKit browsers */
+}
+
+:-moz-placeholder {
+    color: $input-color-placeholder; /* Mozilla Firefox 4 to 18 */
+}
+
+::-moz-placeholder {
+    color: $input-color-placeholder; /* Mozilla Firefox 19+ */
+}
+
+:-ms-input-placeholder {
+    color: $input-color-placeholder; /* Internet Explorer 10+ */
+}
+
+/*
+   IE 10 Snap Mode Viewport Setting
+   http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+*/
+
+@media screen and (max-width: 400px) {
+    @-ms-viewport {
+        width: device-width;
+    }
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-bottom: 1em;
+    background-color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #111;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-headings;
+    text-rendering: optimizeLegibility;
+    
+    a {
+        color: $link-color;
+        text-decoration: none;
+        
+        &:hover, &:focus {
+            text-decoration: underline;
+            color: $link-color-hover;
+        }
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 1em 0 0.5em;
+}
+
+.page-title {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 1em 0 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 1em 0 0.5em;
+}
+
+h5 {
+    font-size: 1.1em;
+    margin: 1em 0 0.5em;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 1em 0 0.5em;
+}
+
+article, p, ul, ol, dl, blockquote, .box {
+    margin: 0 0 1.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+    border: 0;
+    outline: 0;
+}
+
+nav ul, nav ol {
+    margin-bottom: 0;
+}
+
+table {
+    margin: 0 0 1.5em;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-spacing: 0;
+
+    th {
+        text-align: center;
+        background-color: #ddd;
+    }
+
+    th, td {
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 9px 10px;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #eee;
+    }
+}
+
+.caption img, .caption iframe, .caption object {
+    display: block;
+}
+
+.caption-text {
+    font-size: 0.875em;
+    margin: 0.5em 0;
+}
+
+
+/* Non-semantic Helpers
+-------------------------------- */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.reg {
+    position: relative;
+    top: -4px;
+    font-size: 0.7em;
+}
+
+.img-left {
+    float: left;
+    height: auto;
+    margin: 5px 20px 20px 0;
+}
+
+.img-right {
+    float: right;
+    height: auto;
+    margin: 5px 0 20px 20px;
+}
+
+.sidebar .img-left {
+    margin: 2px 10px 5px 0;
+}
+
+.sidebar .img-right {
+    margin: 2px 0 5px 10px;
+}
+
+.indent {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.outdent {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+   Micro Clearfix
+   http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+
+.clearfix:after, .cf:after, .grid:after, .box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* accessibility, print, image replacement */
+.visually-hidden, .screen-reader-text, .wai, .ir {
+    position: absolute;
+    left: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    width: 0;
+    height: 0;
+}

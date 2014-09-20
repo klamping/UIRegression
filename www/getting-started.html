@@ -1,0 +1,433 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="description" content="xyz">
+    <meta name="keywords" content="xyz, xyz, xyz">
+
+    <title>Getting Started with Responsive Starter Kit, Sass Edition</title>
+
+    <!-- Resist the urge to include 'user-scalable=no' below. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Common Style Sheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Layout Style Sheet -->
+    <link rel="stylesheet" href="assets/css/layout-sidebar-right.css">
+
+    <!-- Theme Style Sheet (rename as needed) -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    
+    <style>
+    .toc {
+        margin-bottom: 1.5em;
+        padding: 1em;
+        border: 1px solid #aaa;
+        background-color: #f2f2f2;
+    }
+    
+    .toc h3 {
+        border-bottom: 1px solid #aaa;
+        margin-top: 0;
+        padding-bottom: 0.25em;
+    }
+        
+    .toc ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .toc ul li {
+        margin: 0 0 0.5em;
+        font-weight: bold;
+    }
+    
+    .toc ul ul {
+        margin: 0.5em 0 0 1.5em;
+        list-style: disc;
+    }
+    
+    .toc ul ul li {
+        font-weight: normal;
+        margin-bottom: 0.15em;
+    }    
+
+    @media screen and (min-width: 43.75em) {
+        .toc {
+            position: fixed;
+            top: 1em;
+            right: 1em;
+            width: 30%;
+            margin-bottom: 0;
+            
+        }
+    }
+    </style>
+    
+    <!-- Font Style Sheet -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700|Open+Sans:400,600,700">
+
+    <!-- Use v1.9.1 if IE 6-8 support is needed. -->
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+
+    <!-- Note: Respond.js doesn't work if you open the file directly with file:// -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="assets/js/selectivizr-min.js"></script>
+    <![endif]-->
+	
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5.js"></script>
+	<![endif]-->
+
+    <link rel="apple-touch-icon" href="assets/img/ico/apple-icon-touch.png">
+    <link rel="icon" href="assets/img/ico/favicon.png">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+    <![endif]-->
+    <meta name="msapplication-TileColor" content="#585858">
+    <meta name="msapplication-TileImage" content="assets/img/ico/win8-tile-icon.png">
+</head>
+
+<body>
+
+<div class="site-container">
+
+    <div class="site-content" id="back-to-top-anchor">
+
+        <div class="wrapper">
+
+            <div class="page-content clearfix">
+
+                <main role="main">
+
+                    <article role="article">
+
+                        <header class="article-header">
+
+                            <h1 class="page-title">Getting Started</h1>
+                        
+                        </header>
+                        
+                        <hr>
+                
+                        <section role="complementary" class="toc">
+                    
+                            <h3>Table of Contents</h3>
+                    
+                            <ul>
+                                <li><a href="#download">Download</a></li>
+                                <li><a href="#whats-included">What's Included</a></li>
+                                <li><a href="#basic-structure">Basic Structure of a Page</a></li>
+                                <li><a href="#code-grids">Columns (Grids)</a>
+                                    <ul>
+                                        <li><a href="#code-grids-two">Two Columns</a></li>
+                                        <li><a href="#code-grids-three">Three Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#code-add-ons">Add-ons</a>
+                                    <ul>
+                                        <li><a href="#code-modals">Modal Dialogs</a></li>
+                                        <li><a href="#code-tabs">Tabs</a></li>
+                                        <li><a href="#code-sliders">Content Carousels</a></li>
+                                        <li><a href="#code-tables">Data Tables</a></li>
+                                        <li><a href="#code-videos">Videos</a></li>
+                                        <li><a href="#code-collapsible">Collapsible Content</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </section><!-- /.toc -->
+
+                        <section>
+                            
+                            <p class="intro">This guide will help you get started with the <a href="http://mpgilbertusa.github.io/Responsive-Starter-Kit-Sass/">Responsive Starter Kit, Sass Edition</a>. It covers how to download the kit, the overall directory/file structure, and a brief overview of the layout of a basic page. It also includes code samples to help you include some helpful add-ons.</p>
+                                
+                            <hr>
+                            
+                            <h2 id="download">Download</h2>
+                            
+                            <p>The source code for the starter kit is available in a <strong>GitHub repository</strong>. You can begin by heading over there and cloning or forking the repository directly. Or if you'd prefer, you can <strong>download a ZIP</strong> archive of the starter kit if you'd prefer to get a snapshot of the code without worrying about future updates. Use one of the following links to get started.</p>
+                            
+                            <p>
+                                <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Sass" class="btn btn-gray">View GitHub Project &rsaquo;</a>
+                                <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Sass/archive/master.zip" class="btn btn-gray">Download a ZIP &rsaquo;</a>
+                            </p>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h2 id="whats-included">What's Included</h2>
+                            
+                            <p>The starter kit was built with a basic toolkit requiring minimal setup. The HTML files can be viewed directly in your browser, but if you'd like to test in IE 8, you'll need to view them from a local web server such as MAMP, WAMP, simple Apache, or similar.</p>
+                            
+                            <p>The CSS was written with the Sass CSS pre-processor. Although you can hack away at the compiled CSS directly, you'll really be missing out on the benefits of a CSS pre-processor, so it's not recommended to head down that path. In fact, you should always edit the Sass files instead of the CSS files. Editing the CSS files directly and then editing the Sass file later will cause you to lose any changes you'd previously made directly to the CSS file. There are a few CSS files that are included with jQuery plugins. Those are fair game to be edited directly.</p>
+                            
+                            <div class="alert alert-info"><strong>Note:</strong> If you're not already familiar with CSS pre-processors, head over to the <a href="http://sass-lang.com/" target="_blank">Sass website</a> to see what all the fuss is about. Trust me, it's not a waste of time to use a CSS pre-processor. And there's no time like the present to get started if you haven't already.</div>
+                            
+                            <p>Once you've grabbed the source code and uncompressed it to your hard drive, it should look like this.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9478740.js"></script>
+                            
+                            <p>There are a handful of files in the <em>base</em> directory of the project.</p>
+                            
+                            <ul>
+                                <li><strong>README.md</strong> &ndash; This is a GitHub document with general information about the starter kit.</li>
+                                <li><strong>index.html</strong> &ndash; This is the introductory page for the project. It includes links to sample page layouts, etc.</li>
+                                <li><strong>layout*.html</strong> &ndash; There's a variety of sample layout pages which will demonstrate typical page layouts, including sidebars on the left/right, two sidebars, full width, and more. These can be used as a good starting point for your project. Adjust as needed.</li>
+                                <li><strong>style-guide.html</strong> &ndash; The style guide page contains a sampling of headings, paragraphs, unordered and ordered lists, inline images with content, columns (grids), alerts, and buttons.</li>
+                                <li><strong>add-ons.html</strong> &ndash; The Add-ons page contains an assortment of useful responsive components that can be added for additional functionality, such as content carousels, tabbed navigation, responsive data tables, etc.</li>
+                            </ul>
+                            
+                            <p>All of the compiled <strong>style sheets</strong> are included in the <em>assets/css</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/css</strong> &ndash; The <em>css</em> directory contains all of the compiled .css files.</li>
+                            </ul>
+                            
+                            <p>All of the source Sass files are included in the <em>assets/scss</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/scss</strong> &ndash; The <em>scss</em> directory contains all of the source .scss files which get compiled down to .css files and placed in the <em>assets/css</em> directory.</li>
+                            </ul>
+                                
+                            <p><strong>Images</strong> are included in the <em>assets/img</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/img</strong> &ndash; Image files can be placed here. Create additional sub-directories as needed. There are a few placeholder images which can be deleted.</li>
+                                <li><strong>/assets/img/fancybox</strong> &ndash; Images used by the Fancybox modal plugin.</li>
+                                <li><strong>/assets/img/flexslider</strong> &ndash; Images used by the Flexslider content carousel (slider) plugin.</li>
+                                <li><strong>/assets/img/ico</strong> &ndash; General purpose placeholder icons.</li>
+                            </ul>
+                            
+                            <p>And finally, <strong>JavaScript</strong> files are contained in the <em>assets/js</em> directory.</p>
+                            
+                            <ul>
+                                <li><strong>/assets/js</strong> &ndash; JavaScript files, including sample global and section/page files are included here. You'll also find a small handful of jQuery plugin files.</li>
+                            </ul>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h2 id="basic-structure">Basic Structure of a Page</h2>
+                            
+                            <p>There's an empty layout page (layout-empty.html) which contains the most basic elements to start a page. Duplicate this file and open it in your text editor. Here's a simplified version of that page to illustrate its basic structure.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479127.js"></script>
+
+                            <p>There are additional items in the base template, but this should give you an idea of the overall structure of a typical page. Move things around if you'd like. Take a look at all the sample layout pages and see which one is the best starting point for your project. Make adjustments, additions, and subtractions to the overall structure. Make it your own.</p>
+                            
+                            <div class="alert alert-info"><strong>Remember:</strong> All of this structure is editable to match your project's design. This is just a starting point.</div>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h2 id="code-grids">Columns (Grids)</h2>
+                            
+                            <p>The <a href="style-guide.html" target="_blank">Style Guide page</a> contains several examples of columns/grids that can be used to design your content. Here are some basic code samples to get you started. Refer to the source of the <a href="style-guide.html" target="_blank">Style Guide page</a> for additional code.</p>
+                            
+                            <h3 id="code-grids-two">Two Columns</h3>
+                            
+                            <p>Use this HTML code for <strong>two columns</strong>.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479041.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <h3 id="code-grids-three">Three Columns</h3>
+
+                            <p>Use this HTML code for <strong>three columns</strong>.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479038.js"></script>
+
+                            <div class="alert alert-info"><strong>Note:</strong> Additional columns/grids can be made by using the following classes: <strong>two-thirds</strong>, <strong>one-fourth</strong>, <strong>three-fourths</strong>, <strong>one-fifth</strong>, <strong>two-fifths</strong>, <strong>three-fifths</strong>, <strong>four-fifths</strong>, <strong>one-sixth</strong>, and <strong>five-sixths</strong>.</div>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h2 id="code-add-ons">Add-ons</h2>
+                            
+                            <p>The <a href="add-ons.html" target"_blank">Add-ons page</a> contains a handful of useful items that can be added to a page to provide some additional interactivity, such as content carousels, tabbed navigation, and much more. The following code samples (snippets) will help you get started building these add-ons into your pages.</p>
+                            
+                            <h3 id="code-modals">Modal Dialogs</h3>
+                            
+                            <p>Modal dialogs are created with the jQuery plugin <a href="http://fancyapps.com/fancybox/" target="_blank">fancyBox</a>. Additional details are available on their site.</p>
+                            
+                            <p>Place in the <strong>head</strong> of your document:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479034.js"></script>
+                            
+                            <p>Place in the <strong>foot</strong> of your document:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479014.js"></script>
+                            
+                            <p>Place in the <strong>global.js</strong> your document:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479061.js"></script>
+
+                            <p>Use this HTML code to add an <strong>inline modal dialog</strong>:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479070.js"></script>
+
+                            <p>Use this HTML code to add a <strong>modal image</strong>:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479079.js"></script>
+
+                            <p>Use this HTML code to add a <strong>modal gallery of images</strong>. Notice how the <em>rel</em> attributes are all the same. This is what ties the images together in the modal dialog so that the user can cycle through the full set.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479086.js"></script>
+
+                            <p>Use this HTML code to add a <strong>modal video</strong>. Replace the <em>href</em> attribute with your video's URL.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479087.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h3 id="code-tabs">Tabs</h3>
+                            
+                            <p>Place this code sample in the <strong>head</strong> of your document:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9479360.js"></script>
+
+                            <p>Place this code sample in the <strong>foot</strong> of your document:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9479376.js"></script>
+
+                            <h4>Horizontal Tabs</h4>
+
+                            <p>Use this HTML code for <strong>horizontal tabs</strong>:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9479392.js"></script>
+
+                            <h4>Vertical Tabs</h4>
+
+                            <p>Use this HTML code for <strong>vertical tabs</strong>:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9479401.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h3 id="code-sliders">Content Carousels</h3>
+                            
+                            <p>Content carousels (sliders) use the jQuery plugin <a href="http://flexslider.woothemes.com/" target="_blank">FlexSlider</a> by WooThemes. Additional details are available on their site.</p>
+
+                            <p>Place this code sample in the <strong>head</strong> of your document:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9479437.js"></script>
+
+                            <p>Place this code sample in the <strong>foot</strong> of your document:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9479444.js"></script>
+                            
+                            <p>Use this HTML code to place a <strong>content carousel (slider)</strong> on your page:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9479459.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h3 id="code-tables">Data Tables</h3>
+                            
+                            <p>Place this code in the <strong>head</strong> of your document:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9486750.js"></script>
+
+                            <p>Place this code in the <strong>foot</strong> of your document:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9486763.js"></script>
+                            
+                            <p>Use this HTML code to place a <strong>responsive data table</strong> on your page:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9486817.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h3 id="code-videos">Videos</h3>
+                            
+                            <p>Place this code in the <strong>foot</strong> of your document or in the <strong>global.js</strong> file:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9486879.js"></script>
+                            
+                            <p>Copy the <code>embed</code> code for your video (YouTube, Vimeo, etc.) and wrap it in a <code>div</code> with a <strong>flexible-video</strong> class to make it responsive.</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9487047.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                            <hr>
+                            
+                            <h3 id="code-collapsible">Collapsible Content</h3>
+                            
+                            <p>Place this code in the <strong>global.js</strong> file:</p>
+
+                            <script src="https://gist.github.com/mpgilbertusa/9487131.js"></script>
+                            
+                            <p>Use this HTML code to add a <strong>collapsible section</strong> to your page:</p>
+                            
+                            <script src="https://gist.github.com/mpgilbertusa/9487168.js"></script>
+                            
+                            <div class="back-to-top"><a href="#back-to-top-anchor">Back to Top</a></div>
+                            
+                        </section>
+                        
+                        <hr>
+                        
+                        <section class="additional-info">
+                    
+                            <h2>Additional Information</h2>
+            
+                            <p>The source files for this starter kit are <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit-Pro">hosted on GitHub</a>. Additional technical details can be found there. If you need a bit more help getting started, take a look at the <a href="http://www.mpgilbert.com/responsive-web-design-a-gentle-introduction">video training course</a> that goes with the <a href="https://github.com/mpgilbertusa/Responsive-Starter-Kit">basic version</a> of this starter kit.</p>
+                    
+                            <div class="credit-box clearfix">
+                                <img src="http://www.mpgilbert.com/wp-content/uploads/mg-courtyard-circle-sm.png" alt="Michael P. Gilbert">
+                                <div class="body">
+                                    <h3>Michael P. Gilbert</h3>
+                                    <a href="http://www.mpgilbert.com/">www.mpgilbert.com</a><br>
+                                    <a href="http://twitter.com/mpgilbertusa">@mpgilbertusa</a>
+                                </div>
+                            </div>
+                            
+                        </section><!-- /.additional-info -->
+
+                    </article>
+                
+                </main>
+				
+            </div><!-- /.page-content -->
+        
+        </div><!-- /.wrapper -->
+
+    </div><!-- /.site-content -->
+
+</div><!-- /.site-container -->
+
+<!-- iOS Orientation Change Fix - https://github.com/scottjehl/iOS-Orientationchange-Fix/blob/master/README.md -->
+<script src="assets/js/ios-orientationchange-fix.js"></script>
+
+<!-- Global JavaScript Functions -->
+<script src="assets/js/global.js"></script>
+
+<!-- Page-specific JavaScript Functions (rename as needed) -->
+<script src="assets/js/section-page.js"></script>
+
+</body>
+</html>

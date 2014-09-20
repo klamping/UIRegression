@@ -1,0 +1,20 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Plugin Overrides Style Sheet
+
+-------------------------------- */
+
+/* fancybox modal */
+.fancybox-overlay {
+    text-align: left;
+}
+
+.fancybox-close {
+    left: -18px;
+}
+
+/* fitvids.js */
+.flexible-video {
+    margin-bottom: 1em;
+}

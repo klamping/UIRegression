@@ -1,0 +1,140 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Forms Style Sheet
+
+   Note: All visual styles can
+   be overwritten, deleted, or
+   moved to theme as needed.
+
+-------------------------------- */
+
+.form-group {
+    margin: 0 0 1.5em;
+    clear: both;
+}
+
+.form-group .info {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 0.15em;
+}
+
+.input-error {
+    background-color: #ffeded;
+    border: 1px solid red;
+}
+
+label {
+    display: block;
+    margin: 0 0 0.15em;
+}
+
+label.inline {
+    display: inline;
+}
+
+.info-error {
+    font-size: 0.8em;
+    font-weight: $font-weight-normal;
+    margin-top: 0.15em;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 0 1.5em;
+    padding: 20px 20px 5px;
+    width: 100%;
+}
+
+legend {
+    border: 1px solid #ccc;
+    padding: 0.25em 0.75em;
+    font-weight: $font-weight-bold;
+    font-size: 1.1em;
+}
+
+.validator, .info-error {
+    color: red;
+}
+
+input, select, textarea {
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+}
+
+input:focus {
+    outline: thin dotted;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto;
+    margin-right: 5px;
+    vertical-align: top;
+    line-height: 1;
+    border: 0;
+}
+
+.text-wide, .text-narrow, textarea {
+    width: 100%;
+}
+
+textarea {
+    border: 1px solid #aaa;
+    height: 7em;
+    color: #222;
+    overflow: auto;
+    padding: 5px 10px;
+}
+
+textarea:focus {
+    outline: thin dotted;
+}
+
+.textarea-short {
+    height: 4em;
+}
+
+.required {
+    font-weight: $font-weight-bold;
+    color: red;
+}
+
+/* Styles for Tablets and Larger */
+
+@media all and (min-width: 43.75em) {
+    
+    fieldset {
+        display: inline-block;
+        width: auto;
+    }
+ 
+    input {
+        width: 220px;
+    }
+
+    .text-wide {
+        width: 320px;
+    }
+
+    .text-narrow {
+        width: 75px;
+    }
+
+    textarea {
+        width: 500px;
+        height: 15em;
+    }
+    
+    .textarea-short {
+        height: 7em;
+    }
+    
+}

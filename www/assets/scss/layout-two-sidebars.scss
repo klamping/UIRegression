@@ -1,0 +1,20 @@
+@media all and (min-width: 43.75em) {
+
+    .site-content main {
+        float: left;
+        width: 56%;
+        margin-left: 22%;
+        padding: 0 3%;
+    }
+    
+    .site-content #sb-1 {
+        float: left;
+        width: 22%;
+        margin-left: -78%;
+    }
+    
+    .site-content #sb-2 {
+        float: right;
+        width: 22%;
+    }
+}

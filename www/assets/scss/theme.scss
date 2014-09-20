@@ -1,0 +1,503 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Theme Style Sheet
+
+   Table of Contents: 
+   -----------------------------
+   + Header
+   + Navigation
+   + Page Content
+   + Main
+   + Sidebar
+   + Footer
+
+-------------------------------- */
+
+@import "_variables.scss";
+
+
+/* Web Fonts
+-------------------------------- */
+
+body {
+    font-family: "Gentium Book Basic", serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+nav, .btn, .btn-cancel, .btn-disabled,
+label, legend, input, select, textarea, .info-error,
+.resp-tabs-list li {
+    font-family: "Open Sans", sans-serif;
+}
+
+.gist {
+    margin: 0 0 1.5em;
+}
+
+
+/* Header
+-------------------------------- */
+
+.site-header {
+    background: #ddd;
+    color: #fff;
+    font-size: 0.875em;
+    padding: 10px 0 0;
+    position: relative;
+
+    .site-branding {
+        float: left;
+        
+        a {
+            background: url("../img/logo-1x.gif") no-repeat 0 0;
+            width: 150px;
+            height: 50px;
+            display: block;
+            margin: 0 auto 10px;
+            text-indent: -999em;
+            overflow: hidden;
+        }
+        
+        /* Retina Version of Logo */
+        @media only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+            a {
+                background: url("../img/logo-2x.gif") no-repeat 0 0;
+                background-size: 150px 50px;
+            }
+        }
+    }
+    
+    #nav-primary-link {
+        float: right;
+        margin-top: 18px;
+        background: url('../img/ico/nav-icons-1x.png') no-repeat -4px -6px;
+        width: 22px;
+        height: 16px;
+        text-indent: -999em;
+        overflow: hidden;
+
+        @media all and (min-width: $break-m) {
+            display: none;
+        }
+    }
+    
+    /* Retina Version of Nav Icon */
+    @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        #nav-primary-link {
+            background: url('../img/ico/nav-icons-2x.png') no-repeat -4px -6px;
+            background-size: 30px 98px;
+        }
+    }
+}
+
+
+/* Navigation
+-------------------------------- */
+
+/* Primary Navigation */
+
+.nav-primary {
+    clear: both;
+    background-color: #ddd;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    margin: 0 -10px;
+    
+    ul {
+        border-bottom: 1px solid #aaa;
+    }
+    
+    li {
+        margin-left: 0;
+        border: 0;
+        background: url('../img/ico/nav-icons-1x.png') no-repeat right -31px;
+        display: block;
+        border-top: 1px solid #aaa;
+        text-align: left;
+        
+        &.current a {
+            background: #777 url('../img/ico/nav-icons-1x.png') no-repeat right -61px;
+            color: #fff;
+        }
+
+        @media all and (min-width: $break-m) {
+            background-image: none;
+
+            &.current a {
+                background-image: none;
+                background-color: #777;
+                color: #fff;
+            }
+        }
+    }
+    
+    /* Retina Version of Nav List Icons */
+    @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        li {
+            background: url('../img/ico/nav-icons-2x.png') no-repeat right -30px;
+            background-size: 30px 98px;
+        
+            &.current a {
+                background: #777 url('../img/ico/nav-icons-2x.png') no-repeat right -61px;
+                background-size: 30px 98px;
+            }
+        }
+    }
+
+    a {
+        color: #333;
+        padding: 0.75em;
+        font-size: 0.9em;
+        display: block;
+        text-decoration: none;
+        border: 0;
+
+        &:hover, &:focus {
+            color: #000;
+        }
+    }
+
+    @media all and (min-width: $break-m) {
+        background-color: transparent;
+        margin: 10px 0;
+        clear: none;
+        float: right;
+        
+        ul {
+            margin: 0;
+            border-bottom: 0;
+        }
+        
+        li {
+            border-top: 0;
+            display: inline-block;
+        }
+        
+        a {
+            padding: 7px;
+
+            &:hover, &:focus {
+                background-color: #fff;
+                color: #222;
+            }
+        }
+    }
+}
+
+/* Breadcrumb Navigation */
+
+.page-content {
+    text-align: left;
+    padding: 1.5em 0;
+}
+
+.nav-breadcrumb {
+    font-size: 0.75em;
+    line-height: 1.4;
+    margin: 0 0 2em;
+
+    a {
+        color: $black-50;
+    }
+
+    b {
+        font-size: 1.2em;
+        margin: 0 0.3em;
+    }
+}
+
+.back-to-top {
+    margin: 2.5em 0 1.5em;
+    display: block;
+
+    a {
+        background-color: #ccc;
+        color: $black-80;
+        font-size: 0.75em;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    
+    @media all and (min-width: $break-m) {
+        display: none; /* hide on tablet and up */
+    }
+}
+
+/* Credit box for documentation */
+.credit-box {
+    display: inline-block;
+    margin: 0 0 1.5em;
+    padding: 5px 15px 5px 5px;
+    background-color: $black-10;
+    border: 1px solid $black-30;
+    border-radius: 5px;
+    
+    h3 {
+        font-size: 1em;
+        margin: 0 0 0.25em;
+        padding: 0 0 0.3em;
+        border-bottom: 1px solid $black-30;
+    }
+    
+    img {
+        float: left;
+        margin: 0 7px 0 0;
+    }
+
+    .body {
+        float: right;
+        margin-top: 20px;
+    }
+}
+
+
+/* Main
+-------------------------------- */
+
+main {
+    margin: 0 0 1.5em;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+
+    .article-meta {
+        font-size: 0.875em;
+        color: #777;
+    }
+
+    ul {
+        padding-left: 35px;
+        list-style: disc;
+        
+        ul {
+            margin-bottom: 0;
+            list-style: square;
+        }
+    }
+
+    ol {
+        padding-left: 35px;
+    }
+
+    dt {
+        font-weight: $font-weight-bold;
+    }
+
+    dd {
+        margin-bottom: 0.75em;
+        padding-left: 0.75em;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        line-height: 1.35;
+    }
+
+    blockquote {
+        border-left: 5px solid #bbb;
+        font-style: italic;
+        padding: 0 60px 0 30px;
+
+        p {
+            margin-bottom: 0.75em;
+        }
+    }
+    
+    .image-gallery {
+        display: inline-block;
+        margin: 0 0 1.5em;
+        
+        img {
+            display: block;
+            padding: 3px;
+            
+            @media all and (min-width: $break-m) {
+                display: inline;
+                float: left;
+                padding: 2px 4px;
+            }
+        }
+    }
+}
+
+
+/* Sidebar
+-------------------------------- */
+
+.sidebar {
+    font-size: $font-size-base;
+    line-height: 1.2;
+    margin-bottom: 1.5em;
+    text-align: left;
+
+    h3,  h4 {
+        font-size: 1.2em;
+        font-weight: $font-weight-bold;
+        margin: 0 0 0.5em;
+        color: $black-80;
+    }
+}
+
+
+/* Widgets */
+
+.widget {
+    margin: 0 0 1.5em;
+
+    p, ul, ol, dl {
+        margin-bottom: 1em;
+    }
+
+    &.panel {
+        background-color: #f1f1f1;
+        margin-bottom: 1.5em;
+        padding: 10px 10px 5px;
+        
+        h4 {
+            background-color: #ccc;
+            font-size: 1.1em;
+            font-weight: $font-weight-bold;
+            margin: -10px -10px 10px;
+            padding: 5px 10px;
+            display: block;
+        }
+    }
+}
+
+
+/* Common
+-------------------------------- */
+
+.outline {
+    border: 1px solid #999;
+}
+
+.outline-pad {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+.sidebar .outline-pad {
+    padding: 3px;
+}
+
+/* Buttons */
+
+/* Colors can be added like this. */
+.btn-gray {
+    background: #bbb;
+    color: #333;
+
+    &:hover, &:focus {
+        color: #111;
+    }
+}
+
+/* Disabled */
+.btn-disabled {
+    background-color: #eee;
+    color: #888;
+    padding: 11px 20px;
+    cursor: not-allowed;
+    -webkit-appearance: none;
+
+    &:hover, &:focus {
+        background-color: #eee;
+        color: #888;
+    }
+}
+
+.btn-cancel {
+    border: 1px solid #bbb;
+    color: #777;
+}
+
+
+/* Footer
+-------------------------------- */
+
+.site-footer {
+    clear: both;
+    color: #86888a;
+    font-size: 0.8125em;
+    border-top: 2px solid #ebebeb;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    ul {
+        margin: 0 0 1em;
+        text-align: center;
+        display: inline-block;
+        
+        li {
+            display: inline-block;
+            padding: 0 5px;
+        }
+        
+        li:first-child {
+            padding-left: 0;
+        }
+    }
+
+    a {
+        color: #5a5a5a;
+
+        &:hover, &:focus {
+            color: #222;
+        }
+    }
+
+    @media all and (min-width: $break-m) {
+    
+        .site-copyright {
+            float: left;
+        }
+    
+        .nav-utility {
+            float: right;
+        }
+    }
+}
+
+
+/* Breakpoints (if preferred)
+-------------------------------- */
+
+/* Base Styles */
+/* Insert base styles for Page or Section here. */
+
+/* Extra Small: 320px / 16px = 20em */
+@media all and (min-width: $break-xs) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Small: 480px / 16px = 30em */
+@media all and (min-width: $break-s) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Medium: 700px / 16px = $break-m */
+@media all and (min-width: $break-m) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Large: 900px / 16px = 56.25em */
+@media all and (min-width: $break-l) {
+    /* Insert breakpoint styles here. */
+}
+
+/* Extra Large: 1100px / 16px = 68.75em */
+@media all and (min-width: $break-xl) {
+    /* Insert breakpoint styles here. */
+}

@@ -1,0 +1,44 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Show-Hide Style Sheet
+
+-------------------------------- */
+
+.show-hide {
+  
+    .toggle {
+        background: url(../img/ico/ico-toggle-down-1x.png) no-repeat right center;
+        border-bottom: 1px solid #bbb;
+        margin-bottom: 1.5em;
+        padding-bottom: 5px;
+        cursor: pointer;
+    
+        &.active {
+            background: url(../img/ico/ico-toggle-up-1x.png) no-repeat right center;
+        }
+    }
+    
+    /* Retina Version of Toggle Icon */
+    @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        .toggle {
+            background: url(../img/ico/ico-toggle-down-2x.png) no-repeat right center;
+            background-size: 18px 11px;
+    
+            &.active {
+                background: url(../img/ico/ico-toggle-up-2x.png) no-repeat right center;
+                background-size: 18px 11px;
+            }
+        }
+    }
+  
+    .close-section {
+        display: block;
+        font-size: 14px;
+        text-align: right;
+        margin-bottom: 1.5em;
+    }
+}

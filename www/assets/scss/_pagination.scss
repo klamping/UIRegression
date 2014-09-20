@@ -1,0 +1,62 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Pagination Style Sheet
+
+-------------------------------- */
+
+.pagination {
+    text-align: center;
+    margin: 2em 0 1.5em; 
+    font-weight: bold;
+    
+    .info {
+        font-weight: normal;
+        font-size: (15em/16em);
+        color: #5e5e5e;
+        padding: 0.5em 0;
+        
+        @media screen and (min-width: $break-m) {
+            float: left;
+        }
+    }
+
+    ul {
+        margin-bottom: 10px;
+        padding-left: 0;
+        
+        @media screen and (min-width: $break-m) {
+            text-align: right;
+        }
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        text-align: center;
+
+        a {
+            background-color: $black-10;
+            display: block;
+            padding: 5px 10px;
+            height: 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            
+            &:hover, &:focus {
+                background: $black-40;
+                color: #fff;
+            }
+        }
+        
+        &.current a {
+            background-color: $link-color;
+            color: #fff;
+        }
+    }
+    
+    li:nth-child(1) {
+        margin-left: 0;
+    }
+}

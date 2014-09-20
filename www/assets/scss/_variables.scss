@@ -1,0 +1,82 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Variables Style Sheet
+
+-------------------------------- */
+
+/* General 
+-------------------------------- */
+
+// Grayscale
+$black-10: darken(#fff, 10%);
+$black-20: darken(#fff, 20%);
+$black-30: darken(#fff, 30%);
+$black-40: darken(#fff, 40%);
+$black-50: darken(#fff, 50%);
+$black-60: darken(#fff, 60%);
+$black-70: darken(#fff, 70%);
+$black-80: darken(#fff, 80%);
+$black-90: darken(#fff, 90%);
+
+// Scaffolding
+$body-background: #fff;
+$text-color: $black-90;
+$font-size-base: 1em; /* 16px */
+$line-height-base: 1.4;
+$line-height-headings: 1.2;
+$site-max-width: 1150px;
+
+// Grid Gutters (space between columns)
+$gutter: percentage(20px / $site-max-width);
+
+// Brand Colors
+$color-primary: #005e81;
+$color-secondary: #f7941e;
+$color-tertiary: #c3d348;
+
+// Alerts
+$alert-success-background: #dff0d8;
+$alert-info-background: #d9edf7;
+$alert-warning-background: #fcf8e3;
+$alert-danger-background: #f2dede;
+
+// Links
+$link-color: #0041b1;
+$link-color-hover: darken($link-color, 15%);
+
+// Font Stacks
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Form Input Placeholders
+$input-color-placeholder: lighten($text-color, 70%);
+
+// Selection Color
+$selection-color: #dcf0ff;
+
+
+/* Common Breakpoints
+-------------------------------- */
+
+/* Extra Small: 320px / 16px = 20em */
+$break-xs: 20em;
+
+/* Small: 480px / 16px = 30em */
+$break-s: 30em;
+
+/* Medium: 700px / 16px = 43.75em */
+$break-m: 43.75em;
+
+/* Large: 900px / 16px = 56.25em */
+$break-l: 56.25em;
+
+/* Extra Large: 1100px / 16px = 68.75em */
+$break-xl: 68.75em;

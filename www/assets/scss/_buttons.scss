@@ -1,0 +1,39 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Buttons Style Sheet
+
+-------------------------------- */
+
+.btn {
+    position: relative;
+    margin: 0 0.25em 0.75em 0;
+    padding: 11px 20px 0 20px;
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+    height: 44px;
+    font-size: 1.13em;
+    font-weight: $font-weight-bold;
+    text-align: center;
+}
+
+/* Full Width */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Form Buttons (useful in sidebars and columns) */
+input[type=submit] {
+    padding-top: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    font-weight: $font-weight-bold;
+    text-align: center;
+    padding: 11px 20px;
+    text-decoration: none;
+}

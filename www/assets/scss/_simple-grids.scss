@@ -1,0 +1,72 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Simple Grids Style Sheet
+
+-------------------------------- */
+
+/* Note: Set the $gutter var in mixins.less to set space between columns. */
+
+$one-half: ((100% - $gutter) / 2);
+$one-third: ((100% - ($gutter * 2)) / 3);
+$one-fourth: ((100% - ($gutter * 3)) / 4);
+$one-fifth: ((100% - ($gutter * 4)) / 5);
+$one-sixth: ((100% - ($gutter * 5)) / 6);
+
+@media all and (min-width: $break-m) {
+    
+    .grid .one-half, .grid .one-third, .grid .two-thirds, .grid .one-fourth, .grid .three-fourths,
+    .grid .one-fifth, .grid .two-fifths, .grid .three-fifths, .grid .four-fifths,
+    .grid .one-sixth, .grid .five-sixths {
+        float: left;
+        margin-left: $gutter;
+    }
+    
+    .grid .one-half {
+        width: $one-half;
+    }
+    
+    .grid .one-third {
+        width: $one-third;
+    }
+    
+    .grid .two-thirds {
+        width: $one-third * 2;
+    }
+    
+    .grid .one-fourth {
+        width: $one-fourth;
+    }
+    
+    .grid .three-fourths {
+        width: $one-fourth * 3;
+    }
+    
+    .grid .one-fifth {
+        width: $one-fifth;
+    }
+    
+    .grid .two-fifths {
+        width: $one-fifth * 2;
+    }
+    
+    .grid .three-fifths {
+        width: $one-fifth * 3;
+    }
+    
+    .grid .four-fifths {
+        width: $one-fifth * 4;
+    }
+    
+    .grid .one-sixth {
+        width: $one-sixth;
+    }
+    
+    .grid .five-sixths {
+        width: $one-sixth * 5;
+    }
+    
+    .grid div:first-child {
+        margin-left: 0 !important;
+    }
+}
