@@ -18,6 +18,7 @@
   "homepage": "https://github.com/klamping/UIRegression",
   "devDependencies": {
     "connect": "~3.2.0",
-    "serve-static": "~1.6.2"
+    "serve-static": "~1.6.2",
+    "open": "0.0.5"
   }
 }
