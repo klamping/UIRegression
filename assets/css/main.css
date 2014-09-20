@@ -1,0 +1,735 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Main Style Sheet
+
+-------------------------------- */
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Reset Style Sheet
+
+   Note: Feel free to
+   use a normalize.css file
+   instead of this reset.
+
+-------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+mark {
+  background-color: transparent; }
+
+/*
+   Box-sizing: Border-box
+   http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+   http://css-tricks.com/box-sizing/
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Variables Style Sheet
+
+-------------------------------- */
+/* General 
+-------------------------------- */
+/* 16px */
+/* Common Breakpoints
+-------------------------------- */
+/* Extra Small: 320px / 16px = 20em */
+/* Small: 480px / 16px = 30em */
+/* Medium: 700px / 16px = 43.75em */
+/* Large: 900px / 16px = 56.25em */
+/* Extra Large: 1100px / 16px = 68.75em */
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Common Style Sheet
+
+   Note: All visual styles can
+   be overwritten, deleted, or
+   moved to theme as needed.
+
+   Table of Contents:
+   -----------------------------
+   + Basics
+   + Non-semantic Helpers
+
+-------------------------------- */
+/* Basics
+-------------------------------- */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: white;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1170px;
+  position: relative; }
+
+a {
+  text-decoration: underline;
+  color: #0041b1;
+  /* default link color */ }
+  a:hover, a:focus {
+    color: #002564;
+    /* default link hover/focus color */ }
+  a:focus {
+    outline: thin dotted;
+    /* outline focused elements for accessibility */ }
+  a:hover, a:active {
+    outline: none; }
+
+input[type=checkbox] {
+  border: 0px !important; }
+
+::-moz-selection {
+  background: #dcf0ff;
+  color: inherit;
+  text-shadow: none; }
+
+::selection {
+  background: #dcf0ff;
+  color: inherit;
+  text-shadow: none; }
+
+/* HTML5 placeholder attribute (don't combine into a group selector) */
+::-webkit-input-placeholder {
+  color: #cccccc;
+  /* WebKit browsers */ }
+
+:-moz-placeholder {
+  color: #cccccc;
+  /* Mozilla Firefox 4 to 18 */ }
+
+::-moz-placeholder {
+  color: #cccccc;
+  /* Mozilla Firefox 19+ */ }
+
+:-ms-input-placeholder {
+  color: #cccccc;
+  /* Internet Explorer 10+ */ }
+
+/*
+   IE 10 Snap Mode Viewport Setting
+   http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+*/
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: device-width; } }
+hr {
+  border: 0;
+  height: 1px;
+  margin-bottom: 1em;
+  background-color: #ddd; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  font-weight: 600;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #0041b1;
+    text-decoration: none; }
+    h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
+      text-decoration: underline;
+      color: #002564; }
+
+h1 {
+  font-size: 2.5em;
+  margin: 1em 0 0.5em; }
+
+.page-title {
+  margin-top: 0; }
+
+h2 {
+  font-size: 1.8em;
+  margin: 1em 0 0.5em; }
+
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0 0.5em; }
+
+h4 {
+  font-size: 1.2em;
+  margin: 1em 0 0.5em; }
+
+h5 {
+  font-size: 1.1em;
+  margin: 1em 0 0.5em; }
+
+h6 {
+  font-size: 1em;
+  margin: 1em 0 0.5em; }
+
+article, p, ul, ol, dl, blockquote, .box {
+  margin: 0 0 1.5em; }
+
+img {
+  max-width: 100%;
+  height: auto !important;
+  border: 0;
+  outline: 0; }
+
+nav ul, nav ol {
+  margin-bottom: 0; }
+
+table {
+  margin: 0 0 1.5em;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-spacing: 0; }
+  table th {
+    text-align: center;
+    background-color: #ddd; }
+  table th, table td {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 9px 10px; }
+  table tr:nth-child(even) td {
+    background-color: #eee; }
+
+.caption img, .caption iframe, .caption object {
+  display: block; }
+
+.caption-text {
+  font-size: 0.875em;
+  margin: 0.5em 0; }
+
+/* Non-semantic Helpers
+-------------------------------- */
+.uppercase {
+  text-transform: uppercase; }
+
+.reg {
+  position: relative;
+  top: -4px;
+  font-size: 0.7em; }
+
+.img-left {
+  float: left;
+  height: auto;
+  margin: 5px 20px 20px 0; }
+
+.img-right {
+  float: right;
+  height: auto;
+  margin: 5px 0 20px 20px; }
+
+.sidebar .img-left {
+  margin: 2px 10px 5px 0; }
+
+.sidebar .img-right {
+  margin: 2px 0 5px 10px; }
+
+.indent {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.outdent {
+  margin-left: auto;
+  margin-right: auto; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.left {
+  text-align: left; }
+
+.clear {
+  clear: both; }
+
+/*
+   Micro Clearfix
+   http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearfix:after, .cf:after, .grid:after, .box:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* accessibility, print, image replacement */
+.visually-hidden, .screen-reader-text, .wai, .ir {
+  position: absolute;
+  left: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  width: 0;
+  height: 0; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Alerts Style Sheet
+
+-------------------------------- */
+.alert {
+  background-color: #f2f2f2;
+  color: #666666;
+  border: 1px solid #bbb;
+  margin: 0 0 1em;
+  padding: 10px; }
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #a3d48e;
+  color: #477f31; }
+  .alert-success a {
+    color: #477f31; }
+    .alert-success a:hover, .alert-success a:focus {
+      color: #28471c; }
+
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #85c5e5;
+  color: #207098; }
+  .alert-info a {
+    color: #207098; }
+    .alert-info a:hover, .alert-info a:focus {
+      color: #134158; }
+
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #f2e187;
+  color: #b39a13; }
+  .alert-warning a {
+    color: #b39a13; }
+    .alert-warning a:hover, .alert-warning a:focus {
+      color: #6e5e0c; }
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #d59595;
+  color: #843434; }
+  .alert-danger a {
+    color: #843434; }
+    .alert-danger a:hover, .alert-danger a:focus {
+      color: #4d1e1e; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Buttons Style Sheet
+
+-------------------------------- */
+.btn {
+  position: relative;
+  margin: 0 0.25em 0.75em 0;
+  padding: 11px 20px 0 20px;
+  border: 0;
+  text-decoration: none;
+  display: inline-block;
+  height: 44px;
+  font-size: 1.13em;
+  font-weight: 700;
+  text-align: center; }
+
+/* Full Width */
+.btn-block {
+  display: block;
+  width: 100%; }
+
+/* Form Buttons (useful in sidebars and columns) */
+input[type=submit] {
+  padding-top: 0;
+  margin-right: 15px;
+  cursor: pointer; }
+
+.btn-cancel {
+  font-weight: 700;
+  text-align: center;
+  padding: 11px 20px;
+  text-decoration: none; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Show-Hide Style Sheet
+
+-------------------------------- */
+.show-hide {
+  /* Retina Version of Toggle Icon */ }
+  .show-hide .toggle {
+    background: url(../img/ico/ico-toggle-down-1x.png) no-repeat right center;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 1.5em;
+    padding-bottom: 5px;
+    cursor: pointer; }
+    .show-hide .toggle.active {
+      background: url(../img/ico/ico-toggle-up-1x.png) no-repeat right center; }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .show-hide .toggle {
+      background: url(../img/ico/ico-toggle-down-2x.png) no-repeat right center;
+      background-size: 18px 11px; }
+      .show-hide .toggle.active {
+        background: url(../img/ico/ico-toggle-up-2x.png) no-repeat right center;
+        background-size: 18px 11px; } }
+  .show-hide .close-section {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 1.5em; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Pagination Style Sheet
+
+-------------------------------- */
+.pagination {
+  text-align: center;
+  margin: 2em 0 1.5em;
+  font-weight: bold; }
+  .pagination .info {
+    font-weight: normal;
+    font-size: 0.9375;
+    color: #5e5e5e;
+    padding: 0.5em 0; }
+    @media screen and (min-width: 43.75em) {
+      .pagination .info {
+        float: left; } }
+  .pagination ul {
+    margin-bottom: 10px;
+    padding-left: 0; }
+    @media screen and (min-width: 43.75em) {
+      .pagination ul {
+        text-align: right; } }
+  .pagination li {
+    display: inline-block;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    text-align: center; }
+    .pagination li a {
+      background-color: #e6e6e6;
+      display: block;
+      padding: 5px 10px;
+      height: 30px;
+      text-decoration: none;
+      border-radius: 5px; }
+      .pagination li a:hover, .pagination li a:focus {
+        background: #999999;
+        color: #fff; }
+    .pagination li.current a {
+      background-color: #0041b1;
+      color: #fff; }
+  .pagination li:nth-child(1) {
+    margin-left: 0; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Simple Grids Style Sheet
+
+-------------------------------- */
+/* Note: Set the $gutter var in mixins.less to set space between columns. */
+@media all and (min-width: 43.75em) {
+  .grid .one-half, .grid .one-third, .grid .two-thirds, .grid .one-fourth, .grid .three-fourths,
+  .grid .one-fifth, .grid .two-fifths, .grid .three-fifths, .grid .four-fifths,
+  .grid .one-sixth, .grid .five-sixths {
+    float: left;
+    margin-left: 1.73913%; }
+
+  .grid .one-half {
+    width: 49.13043%; }
+
+  .grid .one-third {
+    width: 32.17391%; }
+
+  .grid .two-thirds {
+    width: 64.34783%; }
+
+  .grid .one-fourth {
+    width: 23.69565%; }
+
+  .grid .three-fourths {
+    width: 71.08696%; }
+
+  .grid .one-fifth {
+    width: 18.6087%; }
+
+  .grid .two-fifths {
+    width: 37.21739%; }
+
+  .grid .three-fifths {
+    width: 55.82609%; }
+
+  .grid .four-fifths {
+    width: 74.43478%; }
+
+  .grid .one-sixth {
+    width: 15.21739%; }
+
+  .grid .five-sixths {
+    width: 76.08696%; }
+
+  .grid div:first-child {
+    margin-left: 0 !important; } }
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Forms Style Sheet
+
+   Note: All visual styles can
+   be overwritten, deleted, or
+   moved to theme as needed.
+
+-------------------------------- */
+.form-group {
+  margin: 0 0 1.5em;
+  clear: both; }
+
+.form-group .info {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.15em; }
+
+.input-error {
+  background-color: #ffeded;
+  border: 1px solid red; }
+
+label {
+  display: block;
+  margin: 0 0 0.15em; }
+
+label.inline {
+  display: inline; }
+
+.info-error {
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-top: 0.15em; }
+
+fieldset {
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0 0 1.5em;
+  padding: 20px 20px 5px;
+  width: 100%; }
+
+legend {
+  border: 1px solid #ccc;
+  padding: 0.25em 0.75em;
+  font-weight: 700;
+  font-size: 1.1em; }
+
+.validator, .info-error {
+  color: red; }
+
+input, select, textarea {
+  font-size: 1em;
+  font-family: Helvetica, Arial, sans-serif; }
+
+input {
+  width: 100%;
+  border: 1px solid #aaa;
+  padding: 5px 10px; }
+
+input:focus {
+  outline: thin dotted; }
+
+input[type=radio], input[type=checkbox] {
+  width: auto;
+  margin-right: 5px;
+  vertical-align: top;
+  line-height: 1;
+  border: 0; }
+
+.text-wide, .text-narrow, textarea {
+  width: 100%; }
+
+textarea {
+  border: 1px solid #aaa;
+  height: 7em;
+  color: #222;
+  overflow: auto;
+  padding: 5px 10px; }
+
+textarea:focus {
+  outline: thin dotted; }
+
+.textarea-short {
+  height: 4em; }
+
+.required {
+  font-weight: 700;
+  color: red; }
+
+/* Styles for Tablets and Larger */
+@media all and (min-width: 43.75em) {
+  fieldset {
+    display: inline-block;
+    width: auto; }
+
+  input {
+    width: 220px; }
+
+  .text-wide {
+    width: 320px; }
+
+  .text-narrow {
+    width: 75px; }
+
+  textarea {
+    width: 500px;
+    height: 15em; }
+
+  .textarea-short {
+    height: 7em; } }
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Plugin Overrides Style Sheet
+
+-------------------------------- */
+/* fancybox modal */
+.fancybox-overlay {
+  text-align: left; }
+
+.fancybox-close {
+  left: -18px; }
+
+/* fitvids.js */
+.flexible-video {
+  margin-bottom: 1em; }
+
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Print Style Sheet
+
+-------------------------------- */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 13pt;
+    line-height: 1.3;
+    font-family: Helvetica, Arial, sans-serif; }
+
+  .site-header {
+    margin: 0 0 15px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #ccc; }
+
+  .site-header .wrapper {
+    height: auto; }
+
+  .site-header .site-branding {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    float: none; }
+
+  .site-header .site-branding a {
+    text-indent: 0;
+    color: #000;
+    text-decoration: none;
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: auto;
+    height: auto;
+    display: block;
+    border: 1px solid #000; }
+
+  h1, h2, h3, h4, h5 {
+    color: #000;
+    text-align: left;
+    margin: 0 0 0.5em; }
+
+  h1 em, h2 em, h3 em, h4 em, h5 em,
+  h1 strong, h2 strong, h3 strong, h4 strong, h5 strong,
+  h1 i, h2 i, h3 i, h4 i, h5 i,
+  h1 b, h2 b, h3 b, h4 b, h5 b {
+    color: #000;
+    text-align: left; }
+
+  h1 {
+    font-size: 21pt; }
+
+  h2 {
+    font-size: 18pt; }
+
+  h3 {
+    font-size: 15pt; }
+
+  h4, h5 {
+    font-size: 13pt; }
+
+  h2, h3, h4, h5 {
+    page-break-after: avoid;
+    margin-top: 0.75em; }
+
+  img {
+    max-width: 100% !important; }
+
+  ul, img {
+    page-break-inside: avoid; }
+
+  ul li {
+    margin-bottom: 5px; }
+
+  blockquote, cite, p, main p, em, strong, a, ul, ol, li, dl, dt, dd {
+    color: #000 !important;
+    /* paint it black */ }
+
+  table {
+    border-top: 1px solid #ccc !important;
+    border-left: 1px solid #ccc !important; }
+
+  table th, table td {
+    color: #000 !important;
+    border-right: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+    padding: 5px 10px !important; }
+
+  .btn {
+    display: block;
+    background: none;
+    color: #000;
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 15pt;
+    border: none;
+    text-decoration: underline; }
+
+  .site-footer {
+    margin: 15px 0 0;
+    padding: 10px 0 0;
+    border-top: 1px solid #ccc; }
+
+  /* Hide Some Stuff */
+  nav, .flexible-video, .sidebar, .back-to-top {
+    display: none; } }

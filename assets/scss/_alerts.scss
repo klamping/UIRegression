@@ -1,0 +1,70 @@
+/* -----------------------------
+
+   Responsive Starter Kit Sass
+   Alerts Style Sheet
+
+-------------------------------- */
+
+.alert {
+    background-color: #f2f2f2;
+    color: $black-60;
+    border: 1px solid #bbb;
+    margin: 0 0 1em;
+    padding: 10px;
+}
+
+.alert-success {
+    background-color: $alert-success-background;
+    border-color: darken($alert-success-background, 20%);
+    color: darken($alert-success-background, 55%);
+
+    a {
+        color: darken($alert-success-background, 55%);
+    
+        &:hover, &:focus {
+            color: darken($alert-success-background, 70%);
+        }
+    }     
+}
+
+.alert-info {
+    background-color: $alert-info-background;
+    border-color: darken($alert-info-background, 20%);
+    color: darken($alert-info-background, 55%);
+
+    a {
+        color: darken($alert-info-background, 55%);
+    
+        &:hover, &:focus {
+            color: darken($alert-info-background, 70%);
+        }
+    }
+}
+
+.alert-warning {
+    background-color: $alert-warning-background;
+    border-color: darken($alert-warning-background, 20%);
+    color: darken($alert-warning-background, 55%);
+
+    a {
+        color: darken($alert-warning-background, 55%);
+    
+        &:hover, &:focus {
+            color: darken($alert-warning-background, 70%);
+        }
+    }
+}
+
+.alert-danger {
+    background-color: $alert-danger-background;
+    border-color: darken($alert-danger-background, 20%);
+    color: darken($alert-danger-background, 55%);
+
+    a {
+        color: darken($alert-danger-background, 55%);
+    
+        &:hover, &:focus {
+            color: darken($alert-danger-background, 70%);
+        }
+    }
+}

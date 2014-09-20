@@ -1,0 +1,12 @@
+@media all and (min-width: 43.75em) {
+
+    .site-content main {
+        float: right;
+        width: 65%;
+    }
+    
+    .site-content .sidebar {
+        float: left;
+        width: 30%;
+    }
+}
