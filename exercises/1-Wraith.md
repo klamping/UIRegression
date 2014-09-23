@@ -41,8 +41,10 @@ Learn how to install, configure and run Wraith to capture page screenshots.
 
 6. In a separate terminal window, start your local server by running `node index.js`
 7. Run Wraith via `wraith capture config`
-8. View gallery output by running `open wraith/shots/gallery.html` (or open via your browser of choice)
+8. View gallery output by running `open shots/gallery.html` (or open via your browser of choice)
 9. Validate that there are no unexpected changes between the GH Pages site and your local instance. 
+
+> Tip: To hide pages that didn't change, add `mode: diffs_only` to the bottom of your config.yaml file
 
 ### Part 2 - Validating Changes
 
