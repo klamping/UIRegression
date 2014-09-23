@@ -17,12 +17,15 @@ Learn how to install, configure and run Wraith to capture page screenshots.
 2. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
 3. Open 'wraith/configs/config.yaml' in your editor of choice
 4. Update the `domains` section to match:
+
     ```
     domains:
         local: "http://localhost:8080"
         production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
     ```
+
 5. Update the `paths` section to match: 
+
     ```
     paths:
       home: /
@@ -35,6 +38,7 @@ Learn how to install, configure and run Wraith to capture page screenshots.
       styleguide: /style-guide.html
       addons: /add-ons.html
     ```
+
 6. In a separate terminal window, start your local server by running `node index.js`
 7. Run Wraith via `wraith capture config`
 8. View gallery output by running `open wraith/shots/gallery.html` (or open via your browser of choice)
