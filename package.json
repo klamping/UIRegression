@@ -19,6 +19,7 @@
   "devDependencies": {
     "connect": "~3.2.0",
     "serve-static": "~1.6.2",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "http-auth": "~2.2.0"
   }
 }
