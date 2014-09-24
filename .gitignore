@@ -1,6 +1,7 @@
 # Wraith ignores
 shots/
-
+configs/
+javascript/
 
 # Logs
 logs
