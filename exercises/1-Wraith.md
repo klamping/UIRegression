@@ -17,12 +17,15 @@ Learn how to install, configure and run Wraith to capture page screenshots.
 2. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
 3. Open 'wraith/configs/config.yaml' in your editor of choice
 4. Update the `domains` section to match:
+
     ```
     domains:
         local: "http://localhost:8080"
         production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
     ```
+
 5. Update the `paths` section to match: 
+
     ```
     paths:
       home: /
@@ -35,10 +38,13 @@ Learn how to install, configure and run Wraith to capture page screenshots.
       styleguide: /style-guide.html
       addons: /add-ons.html
     ```
+
 6. In a separate terminal window, start your local server by running `node index.js`
 7. Run Wraith via `wraith capture config`
-8. View gallery output by running `open wraith/shots/gallery.html` (or open via your browser of choice)
+8. View gallery output by running `open shots/gallery.html` (or open via your browser of choice)
 9. Validate that there are no unexpected changes between the GH Pages site and your local instance. 
+
+> Tip: To hide pages that didn't change, add `mode: diffs_only` to the bottom of your config.yaml file
 
 ### Part 2 - Validating Changes
 
@@ -52,3 +58,7 @@ Make the following changes to the design (run Wraith after each change, noting a
     }
     ```
 3. Change the bottom margin of `.nav-breadcrumb` to `2.5em`
+
+## Conclusion
+
+As you saw with the last change, there are weaknesses to capturing a screenshot of the entire page. PhantomCSS offers an alternative that helps mitigate the problem, but is a little trickier to set up. Overall, Wraith's biggest strength is its ease of setup and configuration for quick validation of a prod vs. local/staging type dev environment.
