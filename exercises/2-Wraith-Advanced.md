@@ -8,13 +8,22 @@ Understand how to validate sites behind logins and slow-loading sites using Wrai
 - https://github.com/andrewccadman/wraith-selenium
 
 ## Assignment
-1. If not already started, start your local server by running `node index.js`
-2. In your favorite editor, open `javascript/snap.js`
-3. Review the comments starting on line 24
-4. Add the following code
+
+### Part 1 - Authentication
+
+1. If still running, stop the server from exercise 1 (`ctrl+c` should do it)
+2. Start a "secure" local server by running `node index.js secure`
+3. Validate you are no longer able to use the site (message of 'Please authenticate' should display on load)
+4. In your favorite editor, open `javascript/snap.js`
+5. Review the comments starting on line 24
+6. Add the following code
 
   ```
   page.customHeaders = {
-      'X-Auth-Token': 'https://api.live.bbc.co.uk/'
+      'X-Auth-Token': 'AUTHENTICATE!'
   };
   ```
+
+7. Run `wraith capture config` and validate it was able to access the site as normal
+
+### Part 2
