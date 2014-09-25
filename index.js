@@ -21,9 +21,9 @@ if (process.argv[2] == 'secure') {
 }
 
 app.use(serveStatic(__dirname + '/www/'));
-app.listen(8080);
+app.listen(process.env.PORT, process.env.IP);
 
 
 // Automatically open browser on start
-open('http://localhost:8080');
-console.log('Server running at http://localhost:8080');
+open(process.env.IP,process.env.PORT);
+console.log('Server running at http://' + process.env.IP + ':' + process.env.PORT);
