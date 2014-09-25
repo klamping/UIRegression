@@ -4,6 +4,9 @@ var serveStatic = require('serve-static');
 
 var app = connect();
 
+var ip = process.env.IP || 'localhost';
+var port = process.env.PORT || '8080';
+
 var fakeAuth = function(req, res, next) {
     if (req.headers['X-Auth-Token'] == 'AUTHENTICATE!') {
         next();
@@ -13,7 +16,7 @@ var fakeAuth = function(req, res, next) {
           res.end(' World\n');
       },2000);
         // sres.end('Please authenticate')
-    };
+    }
 }
 
 if (process.argv[2] == 'secure') {
@@ -21,9 +24,9 @@ if (process.argv[2] == 'secure') {
 }
 
 app.use(serveStatic(__dirname + '/www/'));
-app.listen(process.env.PORT, process.env.IP);
+app.listen(port, ip);
 
 
 // Automatically open browser on start
-open(process.env.IP,process.env.PORT);
-console.log('Server running at http://' + process.env.IP + ':' + process.env.PORT);
+open('http://' + ip + ':' + port);
+console.log('Server running at http://' + ip + ':' + port);
