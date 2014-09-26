@@ -1,13 +1,13 @@
 UI Regression Workshop
 ============
 
-Workshop introducing UI Regression Testing
+The five exercises outlined in this repo are aimed at providing an introduction to UI regression testing. They're designed to provide a partially real-world codebase from which to demo three tools: Wraith, PhantomCSS and DiffUX.
 
-## Installation
+## Getting Started
 
 1. Clone this repo to your local dev environment
 2. Install dependencies by running `npm install`
-3. Get started by choosing an exercise from the `exercises` directory.
+3. Get started with [the first exercise](./exercises/1-Wraith.md)
 
 ## Having Installation Troubles?
 
