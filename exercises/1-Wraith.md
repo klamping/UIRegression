@@ -9,8 +9,6 @@ Learn how to install, configure and run Wraith to capture page screenshots.
 - http://bbc-news.github.io/wraith/index.html
 - https://www.youtube.com/watch?v=gE_19L0l2q0
 
-## Assignment 
-
 ### Pre-reqs
 
 You must have the following installed:
@@ -22,6 +20,8 @@ You must have the following installed:
     3. Use said Ruby version. e.g: `rvm use ruby-2.0.0-p247`
 - [Wraith](http://bbc-news.github.io/wraith/index.html#Installation)
 - [PhantomJS](http://phantomjs.org/download.html)
+
+## Assignment 
 
 ### Part 1 - Wraith Sanity Check 
 
@@ -52,8 +52,6 @@ Make the following changes to the design (run Wraith after each change, noting a
 ## Conclusion
 
 As you saw with the last change, there are weaknesses to capturing a screenshot of the entire page. PhantomCSS offers an alternative that helps mitigate the problem, but is a little trickier to set up. Overall, Wraith's biggest strength is its ease of setup and configuration for quick validation of a prod vs. local/staging type dev environment.
-
-
 
 ## Spoilers
 

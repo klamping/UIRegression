@@ -1,20 +1,21 @@
 # PhantomCSS
-More granular regression testing
+
+While Wraith is simple to set up, it can be limited in its functionality. Since screenshots are taken of the entire page, this can render diffs 
 
 ## Goal
-Demonstrate that you know: [Blurb if it helps]
+Write a PhantomCSS script to validate individual components on the style guide.
 
-**Suggested checklist**:  
+## Resources
+- https://github.com/chrisgladd/grunt-phantomcss
+
+### Pre-reqs
+
+You must have the following installed:
+
+- [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html)
+- [PhantomCSS](https://github.com/Huddle/PhantomCSS#download)
+
+## Assignment
 -
 
-## Suggested reading
--
-
-## Suggested assignment
--
-
-
-
-
-## Feedback
-- Leave feedback on this badge. How can it be improved? Bonus points for a PR.
+## Conclusion 
