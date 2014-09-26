@@ -11,11 +11,7 @@ var fakeAuth = function(req, res, next) {
     if (req.headers['X-Auth-Token'] == 'AUTHENTICATE!') {
         next();
     } else {
-              res.write('Hello\n');
-      setInterval(function() {
-          res.end(' World\n');
-      },2000);
-        // sres.end('Please authenticate')
+      res.end('Please authenticate')
     }
 }
 

@@ -26,4 +26,6 @@ Understand how to validate sites behind logins and slow-loading sites using Wrai
 
 7. Run `wraith capture config` and validate it was able to access the site as normal
 
-### Part 2
+### Part 2 - Automation
+
+With the snap.js file, you can automate some browser functionality. For example, if your page requires a JavaScript framework to load, you can wait for an event 

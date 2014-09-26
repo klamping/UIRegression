@@ -11,12 +11,23 @@ Learn how to install, configure and run Wraith to capture page screenshots.
 
 ## Assignment 
 
+### Pre-reqs
+
+You must have the following installed:
+
+- [Ruby](https://github.com/BBC-News/wraith/blob/master/.ruby-version)
+  -  Recommended install:
+    1. Install [RVM](http://rvm.io/)
+    2. Install specific Ruby version. e.g: `rvm install ruby-2.0.0-p247`
+    3. Use said Ruby version. e.g: `rvm use ruby-2.0.0-p247`
+- [Wraith](http://bbc-news.github.io/wraith/index.html#Installation)
+- [PhantomJS](http://phantomjs.org/download.html)
+
 ### Part 1 - Wraith Sanity Check 
 
-1. Install Wraith via http://bbc-news.github.io/wraith/index.html#Installation
-2. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
-3. Open 'wraith/configs/config.yaml' in your editor of choice
-4. Update the `domains` section to match:
+1. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
+2. Open 'wraith/configs/config.yaml' in your editor of choice
+3. Update the `domains` section to match:
 
     ```
     domains:
@@ -24,7 +35,7 @@ Learn how to install, configure and run Wraith to capture page screenshots.
         production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
     ```
 
-5. Update the `paths` section to match: 
+4. Update the `paths` section to match: 
 
     ```
     paths:
@@ -39,10 +50,10 @@ Learn how to install, configure and run Wraith to capture page screenshots.
       addons: /add-ons.html
     ```
 
-6. In a separate terminal window, start your local server by running `node index.js`
-7. Run Wraith via `wraith capture config`
-8. View gallery output by running `open shots/gallery.html` (or open via your browser of choice)
-9. Validate that there are no unexpected changes between the GH Pages site and your local instance. 
+5. In a separate terminal window, start your local server by running `node index.js`
+6. Run Wraith via `wraith capture config`
+7. View gallery output by running `open shots/gallery.html` (or open via your browser of choice)
+8. Validate that there are no unexpected changes between the GH Pages site and your local instance. 
 
 > Tip: To hide pages that didn't change, add `mode: diffs_only` to the bottom of your config.yaml file
 
