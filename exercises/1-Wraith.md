@@ -27,29 +27,8 @@ You must have the following installed:
 
 1. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
 2. Open 'wraith/configs/config.yaml' in your editor of choice
-3. Update the `domains` section to match:
-
-    ```
-    domains:
-        local: "http://localhost:8080"
-        production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
-    ```
-
-4. Update the `paths` section to match: 
-
-    ```
-    paths:
-      home: /
-      sidebar_left: /layout-sidebar-left.html
-      sidebar_right: /layout-sidebar-right.html
-      three_col: /layout-two-sidebars.html
-      full_width: /layout-full-width.html
-      audio_video: /layout-transcript.html
-      sample_form: /layout-form.html
-      styleguide: /style-guide.html
-      addons: /add-ons.html
-    ```
-
+3. Update the `domains` section to point to your local server and the live GitHub pages repo: [http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass](http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass). (See Spoilers section for hints)
+4. Update the `paths` section to include each page. (Again, see Spoilers section below for all the paths)
 5. In a separate terminal window, start your local server by running `node index.js`
 6. Run Wraith via `wraith capture config`
 7. View gallery output by running `open shots/gallery.html` (or open via your browser of choice)
@@ -73,3 +52,29 @@ Make the following changes to the design (run Wraith after each change, noting a
 ## Conclusion
 
 As you saw with the last change, there are weaknesses to capturing a screenshot of the entire page. PhantomCSS offers an alternative that helps mitigate the problem, but is a little trickier to set up. Overall, Wraith's biggest strength is its ease of setup and configuration for quick validation of a prod vs. local/staging type dev environment.
+
+
+
+## Spoilers
+
+If you're stuck trying to get the code working, here are some solutions:
+
+2. Updating 
+    ```
+    domains:
+        local: "http://localhost:8080"
+        production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
+    ```
+3. Updating Paths:
+    ```
+    paths:
+      home: /
+      sidebar_left: /layout-sidebar-left.html
+      sidebar_right: /layout-sidebar-right.html
+      three_col: /layout-two-sidebars.html
+      full_width: /layout-full-width.html
+      audio_video: /layout-transcript.html
+      sample_form: /layout-form.html
+      styleguide: /style-guide.html
+      addons: /add-ons.html
+    ```
