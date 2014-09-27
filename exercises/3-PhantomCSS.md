@@ -60,9 +60,3 @@ casper.start('http://localhost:8080/style-guide.html')
     phantomcss.compareAll();
 });
 ```
-
-### Part 2 - Step 3
-
-```
-casper.start('http://localhost:8080/add-ons.html')
-```
