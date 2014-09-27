@@ -55,7 +55,7 @@ casper.start('http://localhost:8080/style-guide.html')
 
 ### Part 1 - Step 4
 ```
-var phantomcss = require('./../phantomcss.js');
+var phantomcss = require('phantomcss');
 
 phantomcss.init();
 
@@ -67,7 +67,7 @@ casper.start('http://localhost:8080/style-guide.html')
 
 ### Part 2 - Step 3
 ```
-var phantomcss = require('./../phantomcss.js');
+var phantomcss = require('phantomcss');
 
 phantomcss.init();
 
