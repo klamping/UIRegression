@@ -40,7 +40,7 @@ Taking screenshots of specific sections of the page is a powerful feature, even 
 Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available.
 
 1. Switch over to 'add-ons.html' in your browser.
-2. Create a new file titled 'phantom-addons.js'
+2. In your editor, open the 'phantom-addons.js' file.
 3. Again, load PhantomCSS and start CasperJS.
 4. Since we're trying 
 
@@ -53,27 +53,34 @@ Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the funct
 ## Spoilers
 
 ### Part 1 - Step 3
+
 ```
 casper.start('http://localhost:8080/style-guide.html')
 ```
 
 ### Part 1 - Step 4
+
 ```
-var phantomcss = require('phantomcss');
-
-phantomcss.init();
-
 casper.start('http://localhost:8080/style-guide.html')
 .then(function () {
     phantomcss.screenshot('.nav-breadcrumb', 'Page Breadcrumbs');
 })
 ```
 
-### Part 2 - Step 3
+### Part 1 - Step 5
+
 ```
-var phantomcss = require('phantomcss');
+casper.start('http://localhost:8080/style-guide.html')
+.then(function () {
+    phantomcss.screenshot('.nav-breadcrumb', 'Page Breadcrumbs');
+})
+.then(function(){
+    phantomcss.compareAll();
+});
+```
 
-phantomcss.init();
+### Part 2 - Step 3
 
+```
 casper.start('http://localhost:8080/add-ons.html')
 ```

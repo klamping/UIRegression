@@ -42,7 +42,7 @@ mark {
    Variables Style Sheet
 
 -------------------------------- */
-/* General 
+/* General
 -------------------------------- */
 /* 16px */
 /* Common Breakpoints
@@ -90,7 +90,7 @@ body {
   position: relative; }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #0041b1;
   /* default link color */ }
   a:hover, a:focus {
