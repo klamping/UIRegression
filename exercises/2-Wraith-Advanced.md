@@ -7,6 +7,7 @@ Understand how to validate sites behind logins.
 - [https://github.com/BBC-News/wraith/blob/master/templates/javascript/snap.js](https://github.com/BBC-News/wraith/blob/master/templates/javascript/snap.js)
 - [http://phantomjs.org/page-automation.html](http://phantomjs.org/page-automation.html)
 - [https://github.com/andrewccadman/wraith-selenium](https://github.com/andrewccadman/wraith-selenium)
+- [Integrating Wraith and TravisCI](http://blog.kevinlamping.com/easy-ui-regression-testing-with-wraith-and-travisci/)
 
 ## Assignment - Authentication
 

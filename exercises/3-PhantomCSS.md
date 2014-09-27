@@ -6,28 +6,32 @@ While Wraith is simple to set up, it can be limited in its functionality. Since 
 Write a PhantomCSS script to validate individual components on the style guide.
 
 ## Resources
-- https://github.com/Huddle/PhantomCSS/blob/master/demo/testsuite.js
+- https://github.com/Huddle/PhantomCSS#getting-started-try-the-demo
 
 ### Pre-reqs
 
 You must have the following installed:
 
 - [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html)
-- [PhantomCSS](https://github.com/Huddle/PhantomCSS#download)
+- [PhantomCSS](https://github.com/Huddle/PhantomCSS#download): `npm install phantomcss`
+- [Resemble.js](https://github.com/Huddle/Resemble.js#get-it): `npm install resemblejs`
+    1. Create a `resemblejscontainer.html` file and add [the contents from the official repo](https://raw.githubusercontent.com/Huddle/PhantomCSS/master/ResembleJs/resemblejscontainer.html).
+
 
 ## Assignment
 
 ### Part 1 - Selector based screenshots
 
 1. Open 'style-guide.html' in your browser. Keep it open for reference.
-2. In your editor of choice, create a new file titled 'phantom-styleguide.js'
-3. In that file, start CasperJS by using `casper.start`, passing in the URL to the styleguide page on your local server
-4. Use the `phantomcss.screenshot` function to capture a screenshot of the page breadcrumbs (this requires loading and initializing PhantomCSS in your file).
-5. In a new `.then` command, run the `phantomcss.compareAll` function.
-6. Create a baseline screenshot by running `casperjs test phantom-styleguide.js` on the command line.
-7. Validate the scenario by running the same command again, ensuring it doesn't report a difference.
-8. In the global styles, remove the text-underline from all links.
+2. In your editor, open the 'phantom-styleguide.js' file.
+3. In that file, directly after 'Tests go here', add the line to start CasperJS by using `casper.start(MY_URL)` (replacing MY_URL with the URL to the styleguide page on your local server).
+4. In a new `.then` callback, add a call to the `phantomcss.screenshot` function to capture a screenshot of the page breadcrumbs. You'll want to pass in the selector used by the breadcrumb container.
+5. In another new `.then` callback, run the `phantomcss.compareAll()` function to have phantom compare our screenshots.
+6. In the command line, create a baseline set of screenshots by running `casperjs test phantom-styleguide.js`. It should mention something about being your first time running the tests.
+7. Run the same command again. This time PhantomCSS will compare against the previously created screenshots. Ensuring it doesn't report any failures.
+8. In the global styles (`main.css` or `_common.scss`), set the text-underline for all links to 'none'.
 9. Run phantomcss again, this time checking that it caught the change to the breadcrumbs.
+10. Open the image diff added to the newly created 'failures/' folder. Validate that the difference is marked in fuschia.
 
 ### Part 2 - Page Actions
 

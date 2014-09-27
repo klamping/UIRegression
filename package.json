@@ -21,6 +21,7 @@
     "http-auth": "~2.2.0",
     "open": "0.0.5",
     "passport": "^0.2.1",
-    "serve-static": "~1.6.2"
+    "serve-static": "~1.6.2",
+    "phantomcss": "~0.7.2"
   }
 }
