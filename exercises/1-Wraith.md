@@ -57,22 +57,25 @@ As you saw with the last change, there are weaknesses to capturing a screenshot 
 
 If you're stuck trying to get the code working, here are some solutions:
 
-2. Updating 
-    ```
-    domains:
-        local: "http://localhost:8080"
-        production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
-    ```
-3. Updating Paths:
-    ```
-    paths:
-      home: /
-      sidebar_left: /layout-sidebar-left.html
-      sidebar_right: /layout-sidebar-right.html
-      three_col: /layout-two-sidebars.html
-      full_width: /layout-full-width.html
-      audio_video: /layout-transcript.html
-      sample_form: /layout-form.html
-      styleguide: /style-guide.html
-      addons: /add-ons.html
-    ```
+Part 1, Step 3:
+
+```
+domains:
+    local: "http://localhost:8080"
+    production: "http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass"
+```
+
+Part 1, Step 4:
+
+```
+paths:
+  home: /
+  sidebar_left: /layout-sidebar-left.html
+  sidebar_right: /layout-sidebar-right.html
+  three_col: /layout-two-sidebars.html
+  full_width: /layout-full-width.html
+  audio_video: /layout-transcript.html
+  sample_form: /layout-form.html
+  styleguide: /style-guide.html
+  addons: /add-ons.html
+```
