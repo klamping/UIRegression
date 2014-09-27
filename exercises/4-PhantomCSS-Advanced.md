@@ -1,8 +1,8 @@
 # PhantomCSS - Page Actions
 
-Taking screenshots of specific sections of the page is a powerful feature, even if it requires a little more effort. But what happens the screenshot you need is hidden behind some sort of action (e.g. a mouse click to open a modal window)?
+Taking screenshots of specific sections of the page is a powerful feature, even if it requires a little more effort. But what happens when the screenshot you need is hidden behind some sort of action (e.g. a mouse click to open a modal window)?
 
-Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available.
+Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available for use. 
 
 ## Goal
 

@@ -4,7 +4,7 @@ phantomcss.init({
     libraryRoot: './node_modules/phantomcss',
 });
 
-/// TESTS GO HERE
+// Tests go here
 
 casper.run(function(){
     console.log('Tests completed!')
