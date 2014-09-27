@@ -90,7 +90,7 @@ body {
   position: relative; }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #0041b1;
   /* default link color */ }
   a:hover, a:focus {
