@@ -10,6 +10,7 @@ Take a screenshot of a modal window using CasperJS page action scripting
 
 ## Resources
 - http://docs.casperjs.org/en/latest/quickstart.html
+- http://helloanselm.com/2014/testing-css-states-with-phantomcss/
 
 ### Pre-reqs
 
