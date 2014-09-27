@@ -13,10 +13,10 @@ Learn how to install, configure and run Wraith to capture page screenshots.
 
 You must have the following installed:
 
-- [Ruby](https://github.com/BBC-News/wraith/blob/master/.ruby-version)
+- [Ruby](https://www.ruby-lang.org/en/downloads/)
   -  Recommended install:
     1. Install [RVM](http://rvm.io/)
-    2. Install specific Ruby version. e.g: `rvm install ruby-2.0.0-p247`
+    2. Install [specific Ruby version](https://github.com/BBC-News/wraith/blob/master/.ruby-version). e.g: `rvm install ruby-2.0.0-p247`
     3. Use said Ruby version. e.g: `rvm use ruby-2.0.0-p247`
 - [Wraith](http://bbc-news.github.io/wraith/index.html#Installation)
 - [PhantomJS](http://phantomjs.org/download.html)
