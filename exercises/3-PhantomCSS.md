@@ -14,13 +14,8 @@ You must have the following installed:
 
 - [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html)
 - [PhantomCSS](https://github.com/Huddle/PhantomCSS#download): `npm install phantomcss`
-- [Resemble.js](https://github.com/Huddle/Resemble.js#get-it): `npm install resemblejs`
-    1. Create a `resemblejscontainer.html` file and add [the contents from the official repo](https://raw.githubusercontent.com/Huddle/PhantomCSS/master/ResembleJs/resemblejscontainer.html).
-
 
 ## Assignment
-
-### Part 1 - Selector based screenshots
 
 1. Open 'style-guide.html' in your browser. Keep it open for reference.
 2. In your editor, open the 'phantom-styleguide.js' file.
@@ -33,22 +28,9 @@ You must have the following installed:
 9. Run phantomcss again, this time checking that it caught the change to the breadcrumbs.
 10. Open the image diff added to the newly created 'failures/' folder. Validate that the difference is marked in fuschia.
 
-### Part 2 - Page Actions
-
-Taking screenshots of specific sections of the page is a powerful feature, even if it requires a little more effort. But what happens the screenshot you need is hidden behind some sort of action (e.g. a mouse click to open a modal window)?
-
-Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available.
-
-1. Switch over to 'add-ons.html' in your browser.
-2. In your editor, open the 'phantom-addons.js' file.
-3. Again, load PhantomCSS and start CasperJS.
-4. Since we're trying 
-
 ## Conclusion 
 
-### Further Reading
-- https://github.com/chrisgladd/grunt-phantomcss
-- 
+Something here.
 
 ## Spoilers
 
