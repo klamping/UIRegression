@@ -15,3 +15,9 @@ Sometimes we customize our machines a little too much, or end up with an out of 
 
 - Use [Cloud9IDE](http://c9.io), clone this repo and install the tools via its command line.
 - Work off of a virtual machine using a tool like [Vagrant](https://www.vagrantup.com/).
+
+## Technical Skills Required
+
+- Basic understanding of the command line
+- Intermediate understanding of CSS/SASS
+- Intermediate understanding of JavaScript
