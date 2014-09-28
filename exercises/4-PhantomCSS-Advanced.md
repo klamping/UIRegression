@@ -32,12 +32,19 @@ See previous PhantomCSS exercise for Pre-reqs
 
 ## Assignment
 
-1. Open 'add-ons.html' in your browser for reference.
+1. Open the 'Addons' page in your browser for reference.
 2. In your editor, open the 'phantom-addons.js' file.
-3. Again, add the function to start CasperJS.
-4. Since we're trying 
+3. Again, add the function to start CasperJS immediatly after the 'Tests go here' comment. Be sure to have it load the 'addons.html' page.
+4. Since we need to first open the modal, we'll use CasperJS to trigger the click. In a new `then` callback, use [the click function](http://docs.casperjs.org/en/latest/modules/casper.html#click) to click the link inside the "Here's a simple modal dialog" sentence.
+5. The modal animates open, so we need to wait for the animation to finish before capturing a screenshot. We could set a timeout, but there's a better way. Using [Casper's 'waitForSelector' function](http://docs.casperjs.org/en/latest/modules/casper.html#waitforselector), add a wait for the `fancybox-opened` class to appear on the `fancybox-wrap` class/container.
+6. Inside of the 'waitForSelector' callback function, add you PhantomCSS screenshot command for the `.fancybox-wrap` class.
+7. Now you're ready to run your tests. Use `casperjs test phantom-addons.js` to try out your script.
+8. Add a bottom margin of `1em` on the `.page-title` class in your CSS (in the `main.css` or `_common.scss` file).
+9. Run your tests again and see if it catches the difference.
 
-## Conclusion 
+## Conclusion
+
+There's a wealth of functionality that PhantomJS/CasperJS provide. By having our UI regression testing tool tied in to it, we can create very complex scenarios to validate our UI. 
 
 ### Further Reading
 
@@ -45,8 +52,32 @@ See previous PhantomCSS exercise for Pre-reqs
 
 ## Spoilers
 
-### Part 1 - Step 3
+### Step 3
 
 ```
-casper.start('http://localhost:8080/add-ons.html')
+casper.start('http://localhost:8080/add-ons.html');
+```
+
+### Step 4
+
+```
+casper.then(function () {
+    this.click('a[href="#modal-content"]');
+});
+```
+
+### Step 5
+
+```
+casper.waitForSelector('.fancybox-opened.fancybox-wrap', function () {
+    
+});
+```
+
+### Step 6
+
+```
+casper.waitForSelector('.fancybox-opened.fancybox-wrap', function () {
+    phantomcss.screenshot('.fancybox-wrap', 'Modal Overlay');
+});
 ```

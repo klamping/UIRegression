@@ -6,8 +6,10 @@ phantomcss.init({
 
 // Tests go here
 
-
-casper.run(function(){
+casper.then(function(){
+    // compare screenshots
+    phantomcss.compareAll();
+}).run(function(){
     console.log('Tests completed!')
     phantom.exit(phantomcss.getExitStatus());
 });

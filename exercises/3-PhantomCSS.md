@@ -22,17 +22,18 @@ You must have the following installed:
 
 ## Assignment
 
-1. Open 'style-guide.html' in your browser. Keep it open for reference.
-2. In your editor, open the 'phantom-styleguide.js' file.
-3. In that file, directly after 'Tests go here' comment, add the line to start CasperJS by using `casper.start(MY_URL)` (replacing MY_URL with the URL to the styleguide page on your local server).
-4. In a new `.then` callback, add a call to the `phantomcss.screenshot` function to capture a screenshot of the page breadcrumbs. You'll want to pass in the selector used by the breadcrumb container.
-5. In another new `.then` callback, add another call to the `phantomcss.screenshot` function, this time passing in the selector for the primary navigation.
-6. In another new `.then` callback, run the `phantomcss.compareAll()` function to have phantom compare our screenshots.
-7. In the command line, create a baseline set of screenshots by running `casperjs test phantom-styleguide.js`. It should mention something about being your first time running the tests.
-8. Run the same command again. This time PhantomCSS will compare against the previously created screenshots. It shouldn't report any failures.
-9. In the global styles (`main.css` or `_common.scss`), set the text-underline for all links to 'none'.
-10. Run the command one more time. It should now report a failure.
-11. Open the image diff added to the newly created 'failures/' folder. Validate that the difference is shown.
+1. If you're still running the server from exercise 2, stop it (`ctrl+c` should do it). Start the regular sever back up with `node index.js`.
+2. Open the 'Style Guide' page in your browser for reference.
+3. In your editor, open the 'phantom-styleguide.js' file.
+4. In that file, directly after 'Tests go here' comment, add the line to start CasperJS by using `casper.start(MY_URL)` (replacing MY_URL with the URL to the styleguide page on your local server).
+5. In a new `.then` callback, add a call to the `phantomcss.screenshot` function to capture a screenshot of the page breadcrumbs. You'll want to pass in the selector used by the breadcrumb container.
+6. In another new `.then` callback, add another call to the `phantomcss.screenshot` function, this time passing in the selector for the primary navigation.
+7. In another new `.then` callback, run the `phantomcss.compareAll()` function to have phantom compare our screenshots.
+8. In the command line, create a baseline set of screenshots by running `casperjs test phantom-styleguide.js`. It should mention something about being your first time running the tests.
+9. Run the same command again. This time PhantomCSS will compare against the previously created screenshots. It shouldn't report any failures.
+10. In the global styles (`main.css` or `_common.scss`), set the text-underline for all links to 'none'.
+11. Run the command one more time. It should now report a failure.
+12. Open the image diff added to the newly created 'failures/' folder. Validate that the difference is shown.
 
 ## Conclusion 
 
@@ -42,32 +43,32 @@ In the next exercise, we'll look at how we can script the browser to run certain
 
 ## Spoilers
 
-### Part 1 - Step 3
+### Step 4
 
 ```
-casper.start('http://localhost:8080/style-guide.html')
+casper.start('http://localhost:8080/style-guide.html');
 ```
 
-### Part 1 - Step 4
+### Step 5
 
 ```
-.then(function () {
+casper.then(function () {
     phantomcss.screenshot('.nav-breadcrumb', 'Page Breadcrumbs');
-})
+});
 ```
 
-### Part 1 - Step 5
+### Step 6
 
 ```
-.then(function () {
+casper.then(function () {
     phantomcss.screenshot('.nav-primary', 'Page Primary Navigation');
-})
+});
 ```
 
-### Part 1 - Step 6
+### Step 7
 
 ```
-.then(function(){
+casper.then(function(){
     phantomcss.compareAll();
 });
 ```
