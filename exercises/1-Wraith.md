@@ -1,9 +1,11 @@
 # Wraith
 
-Wraith is a responsive screenshot comparison tool. It requires Ruby and Node, and is used to compare two versions of a website to check for visual regressions.
-
 ## Goal
 Learn how to install, configure and run Wraith to capture page screenshots.
+
+## Introduction
+
+Wraith is a responsive screenshot comparison tool. It requires Ruby and Node, and is used to compare two versions of a website to check for visual regressions.
 
 ## Resources
 - https://github.com/BBC-News/wraith

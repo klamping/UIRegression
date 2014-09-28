@@ -1,13 +1,16 @@
 # PhantomCSS
 
+## Goal
+Write a PhantomCSS script to validate individual components on the style guide.
+
+## Introduction
+
 While Wraith is simple to set up, it can be limited in its functionality. Since screenshots are taken of the entire page, this can render diffs useless if a small sizing change at the top of the page pushes the content below down (as seen in the first Wraith exercise).
 
 PhantomCSS offers an alternative. Instead of full-page screenshots, you're able to select certain elements based on CSS selectors. This provides more granularity in your testing. It's a little more work, but can be very helpful in the long run. 
 
-## Goal
-Write a PhantomCSS script to validate individual components on the style guide.
-
 ## Resources
+- http://tldr.huddle.com/blog/css-testing/
 - https://github.com/Huddle/PhantomCSS#getting-started-try-the-demo
 
 ### Pre-reqs
