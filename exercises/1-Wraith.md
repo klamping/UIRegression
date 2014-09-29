@@ -54,7 +54,7 @@ Make the following changes to the design (run Wraith after each change, noting a
 
 ## Extra Credit
 
-As an alternative to comparing two different URLs, you can set up Wraith to run in ['History' mode](https://github.com/BBC-News/wraith#history-usage), where a single site is compared against itself over multiple runs. Try running the previous changes in history mode on your local server.
+As an alternative to comparing two different URLs, you can set up Wraith to run in ['History' mode](https://github.com/BBC-News/wraith#history-usage), where a single URL is compared against itself over multiple runs. Try running the previous changes in history mode on your local server.
 
 ## Conclusion
 
