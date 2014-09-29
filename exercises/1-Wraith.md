@@ -52,6 +52,10 @@ Make the following changes to the design (run Wraith after each change, noting a
     ```
 3. Change the bottom margin of `.nav-breadcrumb` to `2.5em`
 
+## Extra Credit
+
+As an alternative to comparing two different URLs, you can set up Wraith to run in ['History' mode](https://github.com/BBC-News/wraith#history-usage), where a single site is compared against itself over multiple runs. Try running the previous changes in history mode on your local server.
+
 ## Conclusion
 
 As you saw with the last change, there are weaknesses to capturing a screenshot of the entire page. PhantomCSS offers an alternative that helps mitigate the problem, but is a little trickier to set up. Overall, Wraith's biggest strength is its ease of setup and configuration for quick validation of a prod vs. local/staging type dev environment.
