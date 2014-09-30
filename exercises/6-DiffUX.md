@@ -1,20 +1,29 @@
 # DiffUX
+
 Project workflows with DiffUX
 
 ## Goal
-Demonstrate that you know: [Blurb if it helps]
 
-**Suggested checklist**:  
+
+
+## Resources
 -
 
-## Suggested reading
+## Exercise
 -
 
-## Suggested assignment
--
+Install pre-reqs
+Start server
+Add New Project
+- Name it
+- Leave dimensions as is
+- Add in URLs for the pages
+Run initial scan
+Accept all baseline images
+Make style updates
+Run second scan
+Have another person 
 
+## Extra Credit
 
-
-
-## Feedback
-- Leave feedback on this badge. How can it be improved? Bonus points for a PR.
+Shortcut keys?
