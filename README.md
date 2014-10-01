@@ -21,3 +21,9 @@ Sometimes we customize our machines a little too much, or end up with an out of 
 - Basic understanding of the command line
 - Intermediate understanding of CSS/SASS
 - Intermediate understanding of JavaScript
+
+# Contributions are Welcome!
+
+While I've put a lot of effort trying to polish everything up, there will inevitably be mistakes or things that could be explained more clearly. I would love any help I can get to clean things up.
+
+Also, if you see a tool that isn't covered here, feel free to open it up as an issue or, even better, submit a pull request!
