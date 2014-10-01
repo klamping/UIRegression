@@ -42,6 +42,11 @@ See previous PhantomCSS exercise for Pre-reqs
 8. Add a bottom margin of `1em` on the `.page-title` class in your CSS (in the `main.css` or `_common.scss` file).
 9. Run your tests again and see if it catches the difference.
 
+### Extra Credit
+
+We're testing a responsive starter kit framework, so how do we take screenshots at multiple resolutions? While not built-in to PhantomCSS like Wraith, since they both use PhantomJS behind-the-scenes, you can achieve the same end. [Follow Adnane Belmadiaf's tutorial
+](http://daker.me/2013/07/testing-your-responsive-design-with-phantomjs.html) and try capturing screenshots at 320px and 1024px.
+
 ## Conclusion
 
 There's a wealth of functionality that PhantomJS/CasperJS provide. By having our UI regression testing tool tied in to it, we can create very complex scenarios to validate our UI. 
