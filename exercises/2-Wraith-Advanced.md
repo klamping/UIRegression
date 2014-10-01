@@ -1,7 +1,7 @@
-# Advanced Usage of Wraith
+# Testing Sites That Require Authentication in Wraith
 
 ## Goal
-Understand how to validate sites behind logins.
+Understand how to send headers and cookies in Wraith in order to test sites that require authentication.
 
 ## Resources
 - [https://github.com/BBC-News/wraith/blob/master/templates/javascript/snap.js](https://github.com/BBC-News/wraith/blob/master/templates/javascript/snap.js)
@@ -9,10 +9,10 @@ Understand how to validate sites behind logins.
 - [https://github.com/andrewccadman/wraith-selenium](https://github.com/andrewccadman/wraith-selenium)
 - [Integrating Wraith and TravisCI](http://blog.kevinlamping.com/easy-ui-regression-testing-with-wraith-and-travisci/)
 
-## Assignment - Authentication
+## Assignment
 
-1. If still running, stop the server from exercise 1 (`ctrl+c` should do it)
-2. Start a "secure" local server by running `node index.js secure`
+1. If the server from exercise 1 is still running, stop it (`ctrl+c` should do it)
+2. Start the "secure" local server by running `node index.js secure`
 3. Validate you are no longer able to use the site (message of 'Please authenticate' should display on load)
 4. In your favorite editor, open `javascript/snap.js`
 5. Review the comments starting on line 24
@@ -25,6 +25,12 @@ Understand how to validate sites behind logins.
   ```
 
 7. Run `wraith capture config` and validate it was able to access the site as normal
+
+### Extra Credit
+
+The `snap.js` file is run by [PhantomJS](http://phantomjs.org/), a browser that allows you to easily script commands. In fact, `page.render` ([the command that captures the screenshot](http://phantomjs.org/screen-capture.html)) is built-in to PhantomJS.
+
+With PhantomJS, you can do all sorts of [page automation](http://phantomjs.org/page-automation.html). Try adding code to change the page title to 'UI Regression Testing' before every snapshot.
 
 ## Conclusion
 
