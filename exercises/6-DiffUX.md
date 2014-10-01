@@ -26,4 +26,4 @@ Have another person
 
 ## Extra Credit
 
-Shortcut keys?
+DiffUX allows you to [trigger sweeps via an API call](https://github.com/diffux/diffux#triggering-sweeps), allowing you to integrate sweeps with a tool like [Jenkins](http://jenkins-ci.org/) or [TravisCI](https://travis-ci.org/) (or even [git hooks](http://githooks.com/)). You can also make this call via the command line. Using the command line, or a tool like [Postman](http://www.getpostman.com/), trigger a sweep of the site.
