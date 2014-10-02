@@ -7,7 +7,7 @@ Write a PhantomCSS script to validate individual components on the style guide.
 
 While Wraith is simple to set up, it can be limited in its functionality. Since screenshots are taken of the entire page, this can render diffs useless if a small sizing change at the top of the page pushes the content below down (as seen in the first Wraith exercise).
 
-PhantomCSS offers an alternative. Instead of full-page screenshots, you're able to select certain elements based on CSS selectors. This provides more granularity in your testing. It's a little more work, but can be very helpful in the long run. 
+PhantomCSS offers an alternative. Instead of full-page screenshots, you're able to select certain elements based on CSS selectors. This provides more granularity in your testing. It's a little more work, but can be very helpful in the long run.
 
 ## Resources
 - http://tldr.huddle.com/blog/css-testing/
@@ -34,12 +34,13 @@ You must have the following installed:
 10. In the global styles (`main.css` or `_common.scss`), set the text-underline for all links to 'none'.
 11. Run the command one more time. It should now report a failure.
 12. Open the image diff added to the newly created 'failures/' folder. Validate that the difference is shown.
+13. To accept the changes, delete your 'failures' and 'screenshots' folder, and re-run the scan (note: there may be a better way to do this).
 
 ### Extra Credit
 
 Using a CSS selector isn't the only way to tell PhantomCSS where to take a screenshot. You can also [use coordinates to give an area to capture](https://github.com/Huddle/PhantomCSS#there-are-different-ways-to-take-a-screenshot). Try taking a screenshot of the header and the breadcrumbs combined by passing in coordinates to the `screenshot` function.
 
-## Conclusion 
+## Conclusion
 
 While it does take more effort to write the tests than Wraith, it provides you with a much finer-grain validation method. With PhantomCSS, changes to one component's size likely won't cause the type of cascading validation issues seen with full-page screenshots.
 

@@ -4,6 +4,11 @@ phantomcss.init({
     libraryRoot: './node_modules/phantomcss',
 });
 
+casper.options.viewportSize = {
+    width: 1024,
+    height: 1500
+};
+
 // Tests go here
 
 casper.then(function(){
