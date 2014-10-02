@@ -9,18 +9,26 @@ The five exercises outlined in this repo are aimed at providing an introduction 
 2. Install dependencies by running `npm install`
 3. Get started with [the first exercise](./exercises/1-Wraith.md)
 
-## Having Installation Troubles?
-
-Sometimes we customize our machines a little too much, or end up with an out of date dependency that just won't upgrade, causing installation frustration and dependency nightmares. If you're faced with a situation like this, here are a couple alternative ways to get things set up:
-
-- Use [Cloud9IDE](http://c9.io), clone this repo and install the tools via its command line.
-- Work off of a virtual machine using a tool like [Vagrant](https://www.vagrantup.com/).
-
 ## Technical Skills Required
 
 - Basic understanding of the command line
 - Intermediate understanding of CSS/SASS
 - Intermediate understanding of JavaScript
+
+## Tool Installation
+
+- [Wraith Install Guide](https://github.com/BBC-News/wraith/#installation)
+- [PhantomCSS](
+- [DiffUX]
+
+You'll also need Ruby and Node.js installed. I recommend using [NVM for Node](https://github.com/creationix/nvm) and [RVM for Ruby](http://rvm.io/rvm/install) to manage versions easily.
+
+### Having Installation Troubles?
+
+Sometimes we customize our machines a little too much, or end up with an out of date dependency that just won't upgrade, causing installation frustration and dependency nightmares. If you're faced with a situation like this, here are a couple alternative ways to get things set up:
+
+- Use [Cloud9IDE](http://c9.io), clone this repo and install the tools via its command line.
+- Work off of a virtual machine using a tool like [Vagrant](https://www.vagrantup.com/).
 
 # Contributions are Welcome!
 
