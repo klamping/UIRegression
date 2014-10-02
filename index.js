@@ -1,3 +1,5 @@
+/*jshint node:true*/
+
 var open = require('open');
 var connect = require('connect');
 var serveStatic = require('serve-static');
@@ -8,12 +10,13 @@ var ip = process.env.IP || 'localhost';
 var port = process.env.PORT || '8080';
 
 var fakeAuth = function(req, res, next) {
-    if (req.headers['X-Auth-Token'] == 'AUTHENTICATE!') {
+    console.log(req.headers['x-auth-token']);
+    if (req.headers['x-auth-token'] == 'AUTHENTICATE!') {
         next();
     } else {
-      res.end('Please authenticate')
+      res.end('Please authenticate');
     }
-}
+};
 
 if (process.argv[2] == 'secure') {
     app.use(fakeAuth);

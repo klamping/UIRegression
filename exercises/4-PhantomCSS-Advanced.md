@@ -8,7 +8,7 @@ Take a screenshot of a modal window using CasperJS page action scripting
 
 Taking screenshots of specific sections of the page is a powerful feature, even if it requires a little more effort. But what happens when the screenshot you need is hidden behind some sort of action (e.g. a mouse click to open a modal window)?
 
-Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available for use. 
+Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available for use.
 
 ### What are PhantomJS and CasperJS?
 
@@ -39,6 +39,7 @@ See previous PhantomCSS exercise for Pre-reqs
 5. The modal animates open, so we need to wait for the animation to finish before capturing a screenshot. We could set a timeout, but there's a better way. Using [Casper's 'waitForSelector' function](http://docs.casperjs.org/en/latest/modules/casper.html#waitforselector), add a wait for the `fancybox-opened` class to appear on the `fancybox-wrap` class/container.
 6. Inside of the 'waitForSelector' callback function, add you PhantomCSS screenshot command for the `.fancybox-wrap` class.
 7. Now you're ready to run your tests. Use `casperjs test phantom-addons.js` to try out your script.
+8. Validate it generated the right screenshot by checking the 'ex-4-screenshots' folder.
 8. Add a bottom margin of `1em` on the `.page-title` class in your CSS (in the `main.css` or `_common.scss` file).
 9. Run your tests again and see if it catches the difference.
 
@@ -49,7 +50,7 @@ We're testing a responsive starter kit framework, so how do we take screenshots 
 
 ## Conclusion
 
-There's a wealth of functionality that PhantomJS/CasperJS provide. By having our UI regression testing tool tied in to it, we can create very complex scenarios to validate our UI. 
+There's a wealth of functionality that PhantomJS/CasperJS provide. By having our UI regression testing tool tied in to it, we can create very complex scenarios to validate our UI.
 
 ### Further Reading
 
@@ -75,7 +76,7 @@ casper.then(function () {
 
 ```
 casper.waitForSelector('.fancybox-opened.fancybox-wrap', function () {
-    
+
 });
 ```
 

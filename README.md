@@ -26,6 +26,12 @@ You'll also need Ruby and Node.js installed. I recommend using [NVM for Node](ht
 
 ### Having Installation Troubles?
 
+### PG gem install issues?
+
+Check out [this Stack Overflow question](http://stackoverflow.com/questions/19262312/installing-pg-gem-failure-to-build-native-extension/19620569#19620569).
+
+#### Alternatives
+
 Sometimes we customize our machines a little too much, or end up with an out of date dependency that just won't upgrade, causing installation frustration and dependency nightmares. If you're faced with a situation like this, here are a couple alternative ways to get things set up:
 
 - Use [Cloud9IDE](http://c9.io), clone this repo and install the tools via its command line.

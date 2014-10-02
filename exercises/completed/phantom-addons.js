@@ -2,8 +2,8 @@ var phantomcss = require('phantomcss/phantomcss.js');
 
 phantomcss.init({
     libraryRoot: './node_modules/phantomcss',
-    screenshotRoot: './ex-3-screenshots',
-    failedComparisonsRoot: './ex-3-failures'
+    screenshotRoot: './ex-4-screenshots',
+    failedComparisonsRoot: './ex-4-failures'
 });
 
 casper.options.viewportSize = {
@@ -12,19 +12,18 @@ casper.options.viewportSize = {
 };
 
 // Tests go here
-casper.start('http://localhost:8080/style-guide.html');
+casper.start('http://localhost:8080/add-ons.html');
 casper.then(function () {
-    phantomcss.screenshot('.nav-breadcrumb', 'Page Breadcrumbs');
+    this.click('a[href="#modal-content"]');
 });
-casper.then(function () {
-    phantomcss.screenshot('.nav-primary', 'Page Primary Navigation');
+casper.waitForSelector('.fancybox-opened.fancybox-wrap', function () {
+    phantomcss.screenshot('.fancybox-wrap', 'Modal Overlay');
 });
+
 casper.then(function(){
+    // compare screenshots
     phantomcss.compareAll();
-});
-
-
-casper.run(function(){
+}).run(function(){
     console.log('Tests completed!')
     phantom.exit(phantomcss.getExitStatus());
 });

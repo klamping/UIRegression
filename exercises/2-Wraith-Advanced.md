@@ -16,11 +16,11 @@ Understand how to send headers and cookies in Wraith in order to test sites that
 3. Validate you are no longer able to use the site (message of 'Please authenticate' should display on load)
 4. In your favorite editor, open `javascript/snap.js`
 5. Review the comments starting on line 24
-6. Add the following code
+6. Add the following code to provide the correct authentication details for your site
 
   ```
   page.customHeaders = {
-      'X-Auth-Token': 'AUTHENTICATE!'
+      'x-auth-token': 'AUTHENTICATE!'
   };
   ```
 
@@ -34,9 +34,9 @@ With PhantomJS, you can do all sorts of [page automation](http://phantomjs.org/p
 
 ## Conclusion
 
-What header details you send will depend on the authentication setting of the site your testing. You may not even need to send a header, but instead a cookie with an authentication token. Wraith also allows for this (as you've probably read in the comments). 
+What header details you send will depend on the authentication setting of the site your testing. You may not even need to send a header, but instead a cookie with an authentication token. Wraith also allows for this (as you've probably read in the comments).
 
-Aside from setting up authentication, you can also automate some browser functionality. For example, if your page requires a JavaScript framework to load, you can wait for an event to fire before running the tests. If there are certain page actions to take (e.g. clicking a tab) before snapping a screenshot, you can also program that in. 
+Aside from setting up authentication, you can also automate some browser functionality. For example, if your page requires a JavaScript framework to load, you can wait for an event to fire before running the tests. If there are certain page actions to take (e.g. clicking a tab) before snapping a screenshot, you can also program that in.
 
 The `snap.js` file is a script that's run through PhantomJS, so anything you can do via PhantomJS, you can do in the `snap.js` file. [Read the docs](http://phantomjs.org/page-automation.html) for more information.
 
