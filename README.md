@@ -18,8 +18,9 @@ The five exercises outlined in this repo are aimed at providing an introduction 
 ## Tool Installation
 
 - [Wraith Install Guide](https://github.com/BBC-News/wraith/#installation)
-- [PhantomCSS](
-- [DiffUX]
+ - [PhantomJS](http://phantomjs.org/download.html)
+- [PhantomCSS](https://github.com/Huddle/PhantomCSS)
+- [DiffUX](https://github.com/diffux/diffux#installing)
 
 You'll also need Ruby and Node.js installed. I recommend using [NVM for Node](https://github.com/creationix/nvm) and [RVM for Ruby](http://rvm.io/rvm/install) to manage versions easily.
 
