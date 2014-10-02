@@ -10,7 +10,6 @@ var ip = process.env.IP || 'localhost';
 var port = process.env.PORT || '8080';
 
 var fakeAuth = function(req, res, next) {
-    console.log(req.headers['x-auth-token']);
     if (req.headers['x-auth-token'] == 'AUTHENTICATE!') {
         next();
     } else {
