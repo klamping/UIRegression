@@ -14,3 +14,4 @@ There's a lot of room for growth in this are and contributors are needed to adva
 - http://csste.st/
 - http://thingsinjars.com/post/484/high-definition-css-testing/
 - http://css-tricks.com/automatic-css-testing/
+- https://gist.github.com/klamping/7104237
