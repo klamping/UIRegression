@@ -29,7 +29,7 @@ You must have the following installed:
 ### Part 1 - Wraith Sanity Check 
 
 1. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
-2. Open 'wraith/configs/config.yaml' in your editor of choice
+2. Open 'configs/config.yaml' in your editor of choice
 3. Update the `domains` section to point to your local server and the live GitHub pages repo: [http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass](http://mpgilbertusa.github.io/Responsive-Starter-Kit-Pro-Sass). (See Spoilers section for hints)
 4. Update the `paths` section to include each page. (Again, see Spoilers section below for all the paths)
 5. In a separate terminal window, start your local server by running `node index.js`
