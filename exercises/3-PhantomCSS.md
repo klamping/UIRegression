@@ -31,7 +31,7 @@ You must have the following installed:
 7. In another new `.then` callback, run the `phantomcss.compareAll()` function to have phantom compare our screenshots.
 8. In the command line, create a baseline set of screenshots by running `casperjs test phantom-styleguide.js`. It should mention something about being your first time running the tests. Validate it captured the image correctly by viewing the captures in the 'ex-3-screenshots' folder.
 9. Run the same command again. This time PhantomCSS will compare against the previously created screenshots. It shouldn't report any failures.
-10. In the global styles (`main.css` or `_common.scss`), set the text-underline for all links to 'none'.
+10. In the global styles (`main.css` or `_common.scss`), set the text-decoration for all links from 'underline' to 'none'.
 11. Run the command one more time. It should now report a failure.
 12. Open the image diff added to the newly created 'ex-3-failures/' folder. Validate that the difference is shown. (You can also see the new capture in the existing 'ex-3-screenshots' folder).
 13. To accept the changes, delete your 'ex-3-failures' and 'ex-3-screenshots' folder, and re-run the scan (note: there may be a better way to do this).
