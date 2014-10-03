@@ -32,7 +32,7 @@ See previous PhantomCSS exercise for Pre-reqs
 
 ## Assignment
 
-1. Open the 'Addons' page in your browser for reference.
+1. Open the 'Add-ons' style guide page in your browser for reference.
 2. In your editor, open the 'phantom-addons.js' file.
 3. Again, add the function to start CasperJS immediatly after the 'Tests go here' comment. Be sure to have it load the 'addons.html' page.
 4. Since we need to first open the modal, we'll use CasperJS to trigger the click. In a new `then` callback, use [the click function](http://docs.casperjs.org/en/latest/modules/casper.html#click) to click the link inside the "Here's a simple modal dialog" sentence.
