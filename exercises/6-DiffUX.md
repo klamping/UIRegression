@@ -15,20 +15,19 @@ Understand how UI regression testing can work as part of a project workflow.
 ## Exercise
 
 1. If you haven't already, start the local node server with `node index.js`
-2. [Install DiffUX using their guide](https://github.com/diffux/diffux#mac-os-x-using-homebrew)
-3. Start the DiffUX server (take each action in a separate command line window/tab)
+2. Start the DiffUX server (take each action in a separate command line window/tab)
  - Start redis - `redis-server`
  - Start the Ruby server - `bundle exec rails s`
  - Start sidekiq - `bundle exec sidekiq`
-4. In a browser, open up DiffUX at [http://localhost:3000](http://localhost:3000)
-5. Click the 'Add New Project' button
+3. In a browser, open up DiffUX at [http://localhost:3000](http://localhost:3000)
+4. Click the 'Add New Project' button
  - Name it
  - Leave dimensions as is
  - Add in URLs for the pages
  - Create the project
-6. Start a sweep
-7. Grab something to drink while the sweep runs
-8. After the sweep has been completed, validate all images are as expected and accept them
+5. Start a sweep
+6. Grab something to drink while the sweep runs
+7. After the sweep has been completed, validate all images are as expected and accept them
 
 ### Part 2 - Validating Changes
 

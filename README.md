@@ -19,7 +19,7 @@ The five exercises outlined in this repo are aimed at providing an introduction 
 - [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html) Install via Homebrew `brew install casperjs`
 - [PhantomJS](http://phantomjs.org/download.html)
 - [PhantomCSS](https://github.com/Huddle/PhantomCSS) `npm install phantomcss`
-- [DiffUX](https://github.com/diffux/diffux#installing)
+- [DiffUX](https://github.com/diffux/diffux#mac-os-x-using-homebrew)
 
 ## Technical Skills Required
 
