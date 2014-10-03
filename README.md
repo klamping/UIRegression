@@ -16,8 +16,9 @@ The five exercises outlined in this repo are aimed at providing an introduction 
 - [PhantomJS](http://phantomjs.org/). Install via Homebrew: `brew install phantomjs`
 - [ImageMagick](http://www.imagemagick.org/). Install via Homebrew: `brew install imagemagick`
 - [Wraith](https://github.com/BBC-News/wraith/#installation)
+- [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html) Install via Homebrew `brew install casperjs`
 - [PhantomJS](http://phantomjs.org/download.html)
-- [PhantomCSS](https://github.com/Huddle/PhantomCSS)
+- [PhantomCSS](https://github.com/Huddle/PhantomCSS) `npm install phantomcss`
 - [DiffUX](https://github.com/diffux/diffux#installing)
 
 ## Technical Skills Required

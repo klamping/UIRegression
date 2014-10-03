@@ -13,13 +13,6 @@ PhantomCSS offers an alternative. Instead of full-page screenshots, you're able 
 - http://tldr.huddle.com/blog/css-testing/
 - https://github.com/Huddle/PhantomCSS#getting-started-try-the-demo
 
-### Pre-reqs
-
-You must have the following installed:
-
-- [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html)
-- [PhantomCSS](https://github.com/Huddle/PhantomCSS#download): `npm install phantomcss`
-
 ## Assignment
 
 1. If you're still running the server from exercise 2, stop it (`ctrl+c` should do it). Start the regular sever back up with `node index.js`.
