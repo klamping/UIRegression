@@ -24,6 +24,8 @@ The five exercises outlined in this repo are aimed at providing an introduction 
 
 You'll also need Ruby and Node.js installed. I recommend using [NVM for Node](https://github.com/creationix/nvm) and [RVM for Ruby](http://rvm.io/rvm/install) to manage versions easily.
 
+You'll also need ImageMagick `brew install ImageMagick`
+
 ### Having Installation Troubles?
 
 ### PG gem install issues?
