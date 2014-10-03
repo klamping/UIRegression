@@ -2,8 +2,8 @@ var phantomcss = require('phantomcss/phantomcss.js');
 
 phantomcss.init({
     libraryRoot: './node_modules/phantomcss',
-    screenshotRoot: './ex-3-screenshots',
-    failedComparisonsRoot: './ex-3-failures'
+    screenshotRoot: './ex-4-screenshots',
+    failedComparisonsRoot: './ex-4-failures'
 });
 
 // Set the page width
