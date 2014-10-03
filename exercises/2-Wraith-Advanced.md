@@ -30,7 +30,7 @@ Understand how to send headers and cookies in Wraith in order to test sites that
 
 The `snap.js` file is run by [PhantomJS](http://phantomjs.org/), a browser that allows you to easily script commands. In fact, `page.render` ([the command that captures the screenshot](http://phantomjs.org/screen-capture.html)) is built-in to PhantomJS.
 
-With PhantomJS, you can do all sorts of [page automation](http://phantomjs.org/page-automation.html). Try adding code to change the page title to 'UI Regression Testing' before every snapshot.
+With PhantomJS, you can do all sorts of [page automation](http://phantomjs.org/page-automation.html). Try adding code to change the '.page-title' element text to 'UI Regression Testing' before every snapshot. When run, both sites should show the updated text in the screenshot.
 
 ## Conclusion
 
