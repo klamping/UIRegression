@@ -1,7 +1,7 @@
 UI Regression Workshop
 ============
 
-The five exercises outlined in this repo are aimed at providing an introduction to UI regression testing. They're designed to provide a partially real-world codebase from which to demo three tools: Wraith, PhantomCSS and DiffUX.
+The exercises outlined in this repo are aimed at providing an introduction to UI regression testing. They're designed to provide a partially real-world codebase from which to demo three tools: Wraith, PhantomCSS and DiffUX.
 
 ## Getting Started
 
