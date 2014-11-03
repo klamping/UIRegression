@@ -26,10 +26,6 @@ PhantomCSS ties in to both of these to provide a very functional suite of tools.
 - http://docs.casperjs.org/en/latest/quickstart.html
 - http://helloanselm.com/2014/testing-css-states-with-phantomcss/
 
-### Pre-reqs
-
-See previous PhantomCSS exercise for Pre-reqs
-
 ## Assignment
 
 1. Open the 'Add-ons' style guide page in your browser for reference.

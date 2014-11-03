@@ -12,21 +12,9 @@ Wraith is a responsive screenshot comparison tool. It requires Ruby and Node, an
 - http://bbc-news.github.io/wraith/index.html
 - https://www.youtube.com/watch?v=gE_19L0l2q0
 
-### Pre-reqs
+## Assignment
 
-You must have the following installed:
-
-- [Ruby](https://www.ruby-lang.org/en/downloads/)
-  -  Recommended install:
-    1. Install [RVM](http://rvm.io/)
-    2. Install [specific Ruby version](https://github.com/BBC-News/wraith/blob/master/.ruby-version). e.g: `rvm install ruby-2.0.0-p247`
-    3. Use said Ruby version. e.g: `rvm use ruby-2.0.0-p247`
-- [Wraith](http://bbc-news.github.io/wraith/index.html#Installation)
-- [PhantomJS](http://phantomjs.org/download.html)
-
-## Assignment 
-
-### Part 1 - Wraith Sanity Check 
+### Part 1 - Wraith Sanity Check
 
 1. In the main directory of this repo, initialize Wraith by running `wraith setup` from a terminal window
 2. Open 'configs/config.yaml' in your editor of choice
@@ -35,7 +23,7 @@ You must have the following installed:
 5. In a separate terminal window, start your local server by running `node index.js`
 6. Run Wraith via `wraith capture config`
 7. View gallery output by running `open shots/gallery.html` (or open via your browser of choice)
-8. Validate that there are no unexpected changes between the GH Pages site and your local instance. 
+8. Validate that there are no unexpected changes between the GH Pages site and your local instance.
 
 > Tip: To hide pages that didn't change, add `mode: diffs_only` to the bottom of your config.yaml file
 
