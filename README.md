@@ -1,7 +1,7 @@
 UI Regression Workshop
 ============
 
-The exercises outlined in this repo are aimed at providing an introduction to UI regression testing. They're designed to provide a partially real-world codebase from which to demo three tools: Wraith, PhantomCSS and DiffUX.
+The five exercises outlined in this repo are aimed at providing an introduction to UI regression testing. They're designed to provide a partially real-world codebase from which to demo three tools: Wraith, PhantomCSS and DiffUX.
 
 ## Getting Started
 
@@ -9,22 +9,23 @@ The exercises outlined in this repo are aimed at providing an introduction to UI
 2. Install dependencies by running `npm install`
 3. Get started with [the first exercise](./exercises/1-Wraith.md)
 
+## You will need
+
+- Ruby. I reccommend [RVM](http://rvm.io/) or [RBENV](http://rbenv.org/) to easily install Ruby. A Ruby version of ruby-2.0.0-p247 or higher is required.
+- Node. I recommend using [NVM for Node](https://github.com/creationix/nvm)
+- [PhantomJS](http://phantomjs.org/). Install via Homebrew: `brew install phantomjs`
+- [ImageMagick](http://www.imagemagick.org/). Install via Homebrew: `brew install imagemagick`
+- [Wraith](https://github.com/BBC-News/wraith/#installation)
+- [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html) Install via Homebrew `brew install casperjs`
+- [PhantomJS](http://phantomjs.org/download.html)
+- [PhantomCSS](https://github.com/Huddle/PhantomCSS) `npm install phantomcss`
+- [DiffUX](https://github.com/diffux/diffux#mac-os-x-using-homebrew)
+
 ## Technical Skills Required
 
 - Basic understanding of the command line
 - Intermediate understanding of CSS/SASS
 - Intermediate understanding of JavaScript
-
-## Tool Installation
-
-- [Wraith Install Guide](https://github.com/BBC-News/wraith/#installation)
- - [PhantomJS](http://phantomjs.org/download.html)
-- [PhantomCSS](https://github.com/Huddle/PhantomCSS)
-- [DiffUX](https://github.com/diffux/diffux#installing)
-
-You'll also need Ruby and Node.js installed. I recommend using [NVM for Node](https://github.com/creationix/nvm) and [RVM for Ruby](http://rvm.io/rvm/install) to manage versions easily.
-
-You'll also need ImageMagick `brew install ImageMagick`
 
 ### Having Installation Troubles?
 
@@ -44,7 +45,3 @@ Sometimes we customize our machines a little too much, or end up with an out of 
 While I've put a lot of effort trying to polish everything up, there will inevitably be mistakes or things that could be explained more clearly. I would love any help I can get to clean things up.
 
 Also, if you see a tool that isn't covered here, feel free to open it up as an issue or, even better, submit a pull request!
-
-# Re-Use Welcome
-
-As outlined by the [license](https://github.com/klamping/UIRegression/blob/master/LICENSE), re-use/adaption of any of this content is welcome, whether for work, meetups or conferences.
