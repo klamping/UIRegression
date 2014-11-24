@@ -47,4 +47,4 @@ Also, if you see a tool that isn't covered here, feel free to open it up as an i
 
 # Re-Use Welcome
 
-As outlined by the [license](https://github.com/klamping/UIRegression/blob/master/LICENSE), re-use/adaption of any of this content is welcome, whether for work, meetups or conferences.
+As outlined by the [license](https://github.com/klamping/UIRegression/blob/master/LICENSE), re-use/adaption of any of this content is welcome, whether for work, meetups or conferences. 
