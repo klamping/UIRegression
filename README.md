@@ -9,18 +9,22 @@ The exercises outlined in this repo are aimed at providing an introduction to UI
 2. Install dependencies by running `npm install`
 3. Get started with [the first exercise](./exercises/1-Wraith.md)
 
-## You will need
+## You will need...
 
+### The things the tools need to run:
 - Ruby. I recommend [RVM](http://rvm.io/) or [RBENV](http://rbenv.org/) to easily install Ruby. A Ruby version of ruby-2.0.0-p247 or higher is required.
 - Node. I recommend using [NVM for Node](https://github.com/creationix/nvm)
 - [PhantomJS](http://phantomjs.org/). Install via Homebrew (`brew install phantomjs`) or via NPM (`npm install -g phantomjs`)
 - [ImageMagick](http://www.imagemagick.org/). Install via Homebrew: `brew install imagemagick`
-- [Wraith](https://github.com/BBC-News/wraith/#installation)
+- Alternatively, you can use the [thoughtbot/laptop repo](https://github.com/thoughtbot/laptop) to help with dependency installation.
 - [CasperJS 1.1 Beta](http://docs.casperjs.org/en/latest/installation.html) Install via Homebrew `brew install casperjs`
+
+## And the tools themselves:
+- [Wraith](https://github.com/BBC-News/wraith/#installation)
 - [PhantomCSS](https://github.com/Huddle/PhantomCSS) `npm install phantomcss`
 - [DiffUX](https://github.com/diffux/diffux#mac-os-x-using-homebrew)
 
-## Technical Skills Required
+## Also some technical skills
 
 - Basic understanding of the command line
 - Intermediate understanding of CSS/SASS
