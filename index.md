@@ -1,4 +1,4 @@
-# Hands-on Visual Regression Testing
+# Introduction
 
 Visual interface testing is difficult.
 

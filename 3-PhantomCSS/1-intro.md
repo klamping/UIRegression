@@ -1,4 +1,4 @@
-# PhantomCSS
+# PhantomCSS Basics
 
 ## Goal
 Write a PhantomCSS script to validate individual components on the style guide.

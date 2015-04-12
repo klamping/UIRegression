@@ -1,4 +1,4 @@
-# Wraith
+# Wraith Basics
 
 ## Goal
 Learn how to configure and run Wraith to capture page screenshots.
