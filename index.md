@@ -1,5 +1,28 @@
-# Front Page
+# Hands-on Visual Regression Testing
 
-This is the front page of your book. It can be reached by clicking the first link in the table of contents or by clicking the title of the book (on any page). This file must be named `index.md`.
+Visual interface testing is difficult. It’s not a simple equation of “I send in A and expect out B”. 
 
-The first thing at the beginning of each page (including the front page) should be a heading (represented in markdown by `# Title`). This heading will be used in the table of contents and the page title (on the browser tab). If you do not have a heading on the page, we will use the filename to generate this information.
+## What is Visual Regression Testing?
+
+### It’s Visual
+
+That’s a no brainer. But really, it’s two parts:
+
+1. We’re testing the visual output of the website. This is not functional testing. That’s a different type of test.
+2. We test by comparing the visual output (i.e. diffing) between two versions. 
+
+### It Tests Regressions
+
+Regressions occur when functionality that was working as expected is no longer working as expected. Usually this occurs after a code change, but can also occur due to different content on the page or a time-based condition occurs (think daylight savings time messing up alarm clocks).
+
+One part of regression testing is that you must have a baseline in place before running your tests. This is not test-driven development (which is a very useful development pattern), where you write your tests then write your code.
+
+In my experience, trying to fit visual output in to the TDD pattern consumes an overwhelming amount of time, and results in a lot of duplicate code (making changes down the line more time consuming).
+
+### It’s Testing
+
+Another no-brainer. Testing isn’t perfect and won’t catch every thing, or be able to test every scenario.
+
+> “Testing shows the presence, not the absence of bugs.” - [Edsger W. Dijkstra](http://en.wikiquote.org/wiki/Edsger_W._Dijkstra#1960s)
+
+While Visual Regression Testing can catch many regressions, it’s also not a perfect test (as there’s really no such thing). 
