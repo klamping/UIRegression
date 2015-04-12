@@ -1,3 +1,5 @@
+This repo has moved to https://github.com/klamping/hands-on-visual-regression-testing/ (and is prettier at http://www.kevinlamping.com/hands-on-visual-regression-testing)
+
 UI Regression Workshop
 ============
 
