@@ -1,6 +1,7 @@
 # Testing Sites That Require Authentication in Wraith
 
-## Goal
+Many websites secure their content behind login/authentication mechanisms. Nothing bursts your bubble like discovering 
+
 Understand how to send headers and cookies in Wraith in order to test sites that require authentication.
 
 ## Resources

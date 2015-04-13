@@ -2,6 +2,8 @@
 
 Now that you know Wraith runs and captures the page correctly, let’s try out some real changes.
 
+## Assignment
+
 Make the following alterations to the design (run Wraith after each change, noting any unexpected results):
 
 1. Reduce left/right padding of the `.btn` class to `15px`
@@ -19,4 +21,8 @@ As an alternative to comparing two different URLs, you can set up Wraith to run 
 
 ## Conclusion
 
-As you saw with the last change, there are weaknesses to capturing a screenshot of the entire page. PhantomCSS offers an alternative that helps mitigate the problem, but is a little trickier to set up. Overall, Wraith’s biggest strength is its ease of setup and configuration for quick validation of a prod vs. local/staging type dev environment.
+As you saw with the last change, there are weaknesses to capturing a screenshot of the entire page. PhantomCSS offers an alternative that helps mitigate the problem, but is a little trickier to set up.
+
+I love recommending Wraith as a starting tool for regression testing as it’s so easy to set up and use. The config file layout is simple to understand and the output of the gallery helps visualize differences.
+
+While it has it’s drawbacks, it really shines in introducing people to visual regression testing.
