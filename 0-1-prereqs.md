@@ -39,6 +39,7 @@ I recommend using [NVM for Node](https://github.com/creationix/nvm). You can [in
 ## And the tools themselves:
 - [Wraith](https://github.com/BBC-News/wraith/#installation)
 - [PhantomCSS](https://github.com/Huddle/PhantomCSS) `npm install phantomcss`
+- [Gemini](https://github.com/bem/gemini) `npm install -g gemini`
 - [DiffUX](https://github.com/diffux/diffux#mac-os-x-using-homebrew)
 
 ### Having Installation Troubles?
