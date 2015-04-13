@@ -1,18 +1,12 @@
-# PhantomCSS - Page Actions
-
-## Goal
-
-Take a screenshot of a modal window using CasperJS page action scripting
-
-## Introduction
+# Automating Page Actions
 
 Taking screenshots of specific sections of the page is a powerful feature, even if it requires a little more effort. But what happens when the screenshot you need is hidden behind some sort of action (e.g. a mouse click to open a modal window)?
 
 Lucky, PhantomCSS is tied directly in to CasperJS/PhantomJS, so all of the functionality of those two frameworks is available for use.
 
-### What are PhantomJS and CasperJS?
+## What are PhantomJS and CasperJS?
 
-Officialy, [PhantomJS](http://phantomjs.org/) is a "headless WebKit engine". In simpler terms, PhantomJS is a browser that's built for testing and automation. It does almost everything a regular browser does, but behind the scenes. "Headless" comes from the fact that it doesn't have a visual interface. All interaction takes place via scripts.
+Officially, [PhantomJS](http://phantomjs.org/) is a "headless WebKit engine". In simpler terms, PhantomJS is a browser that's built for testing and automation. It does almost everything a regular browser does, but behind the scenes. "Headless" comes from the fact that it doesn't have a visual interface. All interaction takes place via scripts.
 
 CasperJS comes in to help with scripting. [According to its website](http://casperjs.org/):
 
@@ -23,6 +17,7 @@ In other words, it makes working with PhantomJS easier.
 PhantomCSS ties in to both of these to provide a very functional suite of tools.
 
 ## Resources
+
 - http://docs.casperjs.org/en/latest/quickstart.html
 - http://helloanselm.com/2014/testing-css-states-with-phantomcss/
 
@@ -30,7 +25,7 @@ PhantomCSS ties in to both of these to provide a very functional suite of tools.
 
 1. Open the 'Add-ons' style guide page in your browser for reference.
 2. In your editor, open the 'phantom-addons.js' file.
-3. Again, add the function to start CasperJS immediatly after the 'Tests go here' comment. Be sure to have it load the 'addons.html' page.
+3. Again, add the function to start CasperJS immediately after the 'Tests go here' comment. Be sure to have it load the 'addons.html' page.
 4. Since we need to first open the modal, we'll use CasperJS to trigger the click. In a new `then` callback, use [the click function](http://docs.casperjs.org/en/latest/modules/casper.html#click) to click the link inside the "Here's a simple modal dialog" sentence.
 5. The modal animates open, so we need to wait for the animation to finish before capturing a screenshot. We could set a timeout, but there's a better way. Using [Casper's 'waitForSelector' function](http://docs.casperjs.org/en/latest/modules/casper.html#waitforselector), add a wait for the `fancybox-opened` class to appear on the `fancybox-wrap` class/container.
 6. Inside of the 'waitForSelector' callback function, add you PhantomCSS screenshot command for the `.fancybox-wrap` class.

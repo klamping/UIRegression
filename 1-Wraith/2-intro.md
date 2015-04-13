@@ -24,8 +24,6 @@ Wraith’s biggest strength is its ease of setup and configuration for quick val
 
 In the next exercise, we’ll try making some changes to our styles and see how well Wraith works out.
 
-—
-
 ## Spoilers
 
 If you’re stuck trying to get the code working, here are some solutions:
